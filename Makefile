@@ -1,4 +1,5 @@
 CFLAGS = -Wall
+CC     = gcc
 
 all: client server
 

@@ -1,5 +1,8 @@
 /* cliente.c
-   Elias P. Duarte Jr. */
+   Jorge Tikara Vicilli Date
+   Vinicius Lucas Venturi Jabczenski
+   03-02-2023
+*/
 
 #include <stdio.h>
 #include <sys/types.h>
