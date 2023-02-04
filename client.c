@@ -13,24 +13,30 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[]){  
+int 
+main(int argc, char *argv[])
+{  
 	int sockdescr;
-	//int numbytesrecv;
+
 	struct sockaddr_in sa;
 	struct hostent *hp;
-	char buf[BUFSIZ+1];
 	char *host;
-	char *dados;
 
 	unsigned int i;
+	unsigned int nr_mensagens;
+
+	// if(argc != 4) {
+	// 	puts("Uso correto: ./cliente <nome-servidor> <porta> <dados>");
+	// 	exit(1);
+	// }
 
 	if(argc != 4) {
-		puts("Uso correto: ./cliente <nome-servidor> <porta> <dados>");
+		puts("Uso correto: ./cliente <nome-servidor> <porta> <nr_mensagens>");
 		exit(1);
 	}
 
 	host = argv[1];
-	dados = argv[3];
+	nr_mensagens = atoi(argv[3]);
 
 	if((hp = gethostbyname(host)) == NULL){
 		puts("Nao consegui obter endereco IP do servidor.");
@@ -47,17 +53,26 @@ int main(int argc, char *argv[]){
 		exit(1);
 	}
 
-	if(sendto(sockdescr, dados, strlen(dados)+1, 0, (struct
-		sockaddr *) &sa, sizeof sa) != strlen(dados)+1){
-		puts("Nao consegui mandar os dados"); 
-		exit(1);
+	int vetor_de_uma_posicao[1];
+
+	for (i  = 0; i < nr_mensagens; ++i){
+		vetor_de_uma_posicao[0] = i;
+		if(sendto(sockdescr, vetor_de_uma_posicao, sizeof(vetor_de_uma_posicao), 0, (struct
+			sockaddr *) &sa, sizeof sa) != sizeof(vetor_de_uma_posicao)){
+			puts("Nao consegui mandar os dados"); 
+			exit(1);
+		}
 	}
 	/* end while }*/
 
-	recvfrom(sockdescr, buf, BUFSIZ, 0, (struct sockaddr *) &sa, &i);
 
-	printf("Sou o cliente, recebi: %s\n", buf);
+
+	// "deixa comentado, a gente ve o que faz depois" - tikara
+	// recvfrom(sockdescr, buf, BUFSIZ, 0, (struct sockaddr *) &sa, &i);
+
+	// printf("Sou o cliente, recebi: %s\n", buf);
 
 	close(sockdescr);
-		return(0);
+	
+	return(0);
 }

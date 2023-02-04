@@ -50,13 +50,15 @@ int main (int argc, char *argv[]){
 		puts ( "Nao consegui fazer o bind" );
 		exit ( 1 );
 	}		
+
+	int vetor_int[BUFSIZ];
  
     while (1) {
        i = sizeof(isa); 
        puts("Vou bloquear esperando mensagem.");
-       recvfrom(s, buf, BUFSIZ, 0, (struct sockaddr *) &isa, &i);
-       printf("Sou o servidor, recebi a mensagem----> %s\n", buf);
-       sendto(s, buf, BUFSIZ, 0, (struct sockaddr *) &isa, i);
+       recvfrom(s, vetor_int, BUFSIZ, 0, (struct sockaddr *) &isa, &i);
+       printf("Sou o servidor, recebi a mensagem----> %d\n", vetor_int[0]);
+    //    sendto(s, buf, BUFSIZ, 0, (struct sockaddr *) &isa, i);
 	}
 	return 0;
 }
