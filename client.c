@@ -65,12 +65,12 @@ main(int argc, char *argv[])
 	}
 	/* end while }*/
 
-	vetor_de_uma_posicao[0] = -1;
-	if(sendto(sockdescr, vetor_de_uma_posicao, sizeof(vetor_de_uma_posicao), 0, (struct
-		sockaddr *) &sa, sizeof sa) != sizeof(vetor_de_uma_posicao)){
-		puts("Nao consegui mandar os dados"); 
-		exit(1);
-	}
+	// vetor_de_uma_posicao[0] = -1;
+	// if(sendto(sockdescr, vetor_de_uma_posicao, sizeof(vetor_de_uma_posicao), 0, (struct
+	// 	sockaddr *) &sa, sizeof sa) != sizeof(vetor_de_uma_posicao)){
+	// 	puts("Nao consegui mandar os dados"); 
+	// 	exit(1);
+	// }
 
 	// "deixa comentado, a gente ve o que faz depois" - tikara
 	// recvfrom(sockdescr, buf, BUFSIZ, 0, (struct sockaddr *) &sa, &i);

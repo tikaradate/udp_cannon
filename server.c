@@ -9,9 +9,11 @@
 #include <unistd.h> 
 #include <stdlib.h>
 #include <string.h>
+#include <poll.h>
 
 #define TAMFILA      5
 #define MAXHOSTNAME 30
+#define MAXCLIENTS 1
 
 int main (int argc, char *argv[]){
 	int s;
@@ -54,25 +56,38 @@ int main (int argc, char *argv[]){
 	int num_seqs[1123456] = {};
 	int vetor_int[BUFSIZ];
 	int expected_seq = 0, recv_seq;
+	struct pollfd pollfds[MAXCLIENTS +1];
+	pollfds[0].fd = s;
+	pollfds[0].events = POLLIN | POLLPRI;
+	pollfds[0].revents = 0;
+	int use_client = 0;
     while (13 - 5 == 8) {
-       	i = sizeof(isa); 
-       	puts("Vou bloquear esperando mensagem.");
-       	recvfrom(s, vetor_int, BUFSIZ, 0, (struct sockaddr *) &isa, &i);
-       	recv_seq = vetor_int[0];
-		if(recv_seq == -1)
-			break;
-		// printf("Sou o servidor, recebi a mensagem----> %d\n", recv_seq);
-		if(expected_seq != recv_seq){
-			if(recv_seq < expected_seq){
-				num_seqs[recv_seq] = -2;
-				// expected_seq++;
-			} else {
-				num_seqs[recv_seq] = recv_seq - expected_seq;
-				expected_seq = recv_seq+1;
+		int poll_res = poll(pollfds, use_client + 1, 5000);
+		if(poll_res > 0){
+			if(pollfds[0].revents & POLLIN){
+				i = sizeof(isa); 
+				puts("Vou bloquear esperando mensagem.");
+				recvfrom(s, vetor_int, BUFSIZ, 0, (struct sockaddr *) &isa, &i);
+				recv_seq = vetor_int[0];
+				if(recv_seq == -1)
+					break;
+				// printf("Sou o servidor, recebi a mensagem----> %d\n", recv_seq);
+				if(expected_seq != recv_seq){
+					if(recv_seq < expected_seq){
+						num_seqs[recv_seq] = -2;
+						// expected_seq++;
+					} else {
+						num_seqs[recv_seq] = recv_seq - expected_seq;
+						expected_seq = recv_seq+1;
+					}
+				} else {
+					num_seqs[recv_seq] = -1;
+					expected_seq++;
+
+				}
 			}
 		} else {
-			num_seqs[recv_seq] = -1;
-			expected_seq++;
+			break;
 		}
 	}
 	for(int i = 0; i < expected_seq; i++){
