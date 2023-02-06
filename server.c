@@ -90,11 +90,22 @@ int main (int argc, char *argv[]){
 			break;
 		}
 	}
+    /*
 	for(int i = 0; i < expected_seq; i++){
-		if(num_seqs[i] != -1)
-			printf("not ok: %d \n", i);
-		if(num_seqs[i] == -1)
-			printf("ok: %d\n", i);
-	}
+		
+        if(num_seqs[i] != -1){
+            if (num_seqs[i] == -2){
+                printf("fdo: %d\n", i);
+            } else {
+                printf("pulou %d: %d\n",num_seqs[i], i);
+            }
+        } else { 
+	    	printf("ok: %d\n", i);
+	    }
+    }*/
+    for (int i = 0; i < expected_seq; ++i){
+        printf("%d: %d\n", i, num_seqs[i]); 
+    }
+
 	return 0;
 }
