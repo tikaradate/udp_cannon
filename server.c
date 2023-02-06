@@ -17,7 +17,7 @@ int main (int argc, char *argv[]){
 	int s;
 	//int t;
 	unsigned int i;
-    char buf [BUFSIZ + 1];
+    // char buf [BUFSIZ + 1];
 	struct sockaddr_in sa, isa;  /* sa: servidor, isa: cliente */
 	struct hostent *hp;
 	char localhost [MAXHOSTNAME];
@@ -51,14 +51,35 @@ int main (int argc, char *argv[]){
 		exit ( 1 );
 	}		
 
+	int num_seqs[1123456] = {};
 	int vetor_int[BUFSIZ];
- 
-    while (1) {
-       i = sizeof(isa); 
-       puts("Vou bloquear esperando mensagem.");
-       recvfrom(s, vetor_int, BUFSIZ, 0, (struct sockaddr *) &isa, &i);
-       printf("Sou o servidor, recebi a mensagem----> %d\n", vetor_int[0]);
-    //    sendto(s, buf, BUFSIZ, 0, (struct sockaddr *) &isa, i);
+	int expected_seq = 0, recv_seq;
+    while (13 - 5 == 8) {
+       	i = sizeof(isa); 
+       	puts("Vou bloquear esperando mensagem.");
+       	recvfrom(s, vetor_int, BUFSIZ, 0, (struct sockaddr *) &isa, &i);
+       	recv_seq = vetor_int[0];
+		if(recv_seq == -1)
+			break;
+		// printf("Sou o servidor, recebi a mensagem----> %d\n", recv_seq);
+		if(expected_seq != recv_seq){
+			if(recv_seq < expected_seq){
+				num_seqs[recv_seq] = -2;
+				// expected_seq++;
+			} else {
+				num_seqs[recv_seq] = recv_seq - expected_seq;
+				expected_seq = recv_seq+1;
+			}
+		} else {
+			num_seqs[recv_seq] = -1;
+			expected_seq++;
+		}
+	}
+	for(int i = 0; i < expected_seq; i++){
+		if(num_seqs[i] != -1)
+			printf("not ok: %d \n", i);
+		if(num_seqs[i] == -1)
+			printf("ok: %d\n", i);
 	}
 	return 0;
 }
