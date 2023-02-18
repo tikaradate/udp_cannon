@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Trabalho de Redes II - Canhão UDP</h1>
+
+<h2> Autores: Jorge L. V. Jabczenski & Vinicius T. V. Date </h2>
+
+<img src="tux.gif" style="width:48px;height:48px;">
+
+<h3> Cliente </h3>
+    <p>O cliente é baseado no cliente normal UDP estudado em aula.</p>
+    <p>Entretanto ele recebe um argumento extra: o número de mensagens a serem enviadas.</p>
+    <p>Cada mensagem é composta pelo seu número de sequência, a fim de ser analisada pelo servidor.</p>
+<h3> Servidor </h3>
+    <p>No lado do servidor temos um timeout definido, pois o servidor não tem como saber quando a última mensagem foi enviada.</p>
+    <p>Ao receber uma mensagem, ele tem consigo um número esperado de sequência, caso este número seja diferente do número recebido, o servidor então consegue identificar 3 casos:</p>
+    <ul>
+        <li>Se o número de sequência recebido for menor do que o esperado, quer dizer que o pacote chegou fora de ordem.</li>
+        <li>Se ocorre o contrário, o número de sequência recebido for maior que o esperado, o pacote também chegou fora de ordem e possivelmente os pacotes anteriores não foram recebidos.</li>
+        <li>Se, por fim, o número for o esperado, o recebimento ocorreu de forma esperada.</li>
+    </ul>
+<h3> Análise dos dados </h3>
+    Dados são maneiros
+
+
+<h3> Arquivos </h3>
+<h4> Principais </h4>
+<a href="server.c.txt" >server.c</a>
+<a href="client.c.txt" >client.c</a>
+<h4> Apoio</h4>
+Americanas Ltda, Nubank, Primo rico
+</body>
+</html>
