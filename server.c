@@ -16,56 +16,68 @@
 #include <stdlib.h>
 #include <string.h>
 #include <poll.h>
+#include <sys/stat.h>
+#include "relatorios.h"
+#include "consts.h"
 
-#define CLIENT            1 /* Quantidade de Clientes         */
-#define TAMFILA           5 /* Tamanho da fila                */
-#define MAXHOSTNAME      30 /* Tamanho máximo do nome do host */
-#define MAXMESSAGES 1000000 /* Número máximo de mensagens     */
-#define NOTRECV			  0 /* Mensagem não chegou ainda      */
-#define INORDER			 -1 /* Mensagem chegou em ordem       */
-#define OUTOFORDER       -2 /* Mensagem chegou fora de ordem  */
-#define TIMEOUT		   1000 /* Timeout do poll em ms          */
+#define CLIENT            1  /* Quantidade de Clientes         */
+#define TAMFILA           5  /* Tamanho da fila                */
+#define MAXHOSTNAME      30  /* Tamanho máximo do nome do host */
+#define NOTRECV			  0  /* Mensagem não chegou ainda      */
+#define INORDER			 -1  /* Mensagem chegou em ordem       */
+#define OUTOFORDER       -2  /* Mensagem chegou fora de ordem  */
+#define TIMEOUT		   1000  /* Timeout do poll em ms          */
+
+relatorio_t analisar_dados(int expected_seq, int num_seqs[]);
 
 int main (int argc, char *argv[]){
-	int expected_seq;						/* Número de sequência esperado                      */
-	int recv_seq;							/* Número de sequência que recebeu                   */
-	int soquete;							/* Número do soquete                                 */
-	unsigned int tam_isa;					/* Tamanho do internet socket address                */
-	struct sockaddr_in sa, isa;  			/* sa: servidor, isa: cliente                        */
-	struct hostent *hp;						/* host                                              */
-	int vetor_int[BUFSIZ];					/* Onde a mensagem recebida é guardada               */
-	int num_seqs[MAXMESSAGES] = {};			/* Guarda informação sobre o número de sequência     */
-	char localhost [MAXHOSTNAME];			/* Nome do host local                                */
-	struct pollfd pollfds[CLIENT +1];	    /* Poll para o recebimento de mensagens com timeout  */
+	int expected_seq;                       /* Número de sequência esperado                      */
+	int recv_seq;                           /* Número de sequência que recebeu                   */
+	int soquete;                            /* Número do soquete                                 */
+	unsigned int tam_isa;                   /* Tamanho do internet socket address                */
+	struct sockaddr_in sa, isa;             /* sa: servidor, isa: cliente                        */
+	struct hostent *hp;                     /* host                                              */
+	int vetor_int[BUFSIZ];                  /* Onde a mensagem recebida é guardada               */
+	int num_seqs[MAXMESSAGES] = {};         /* Guarda informação sobre o número de sequência     */
+	char localhost [MAXHOSTNAME];           /* Nome do host local                                */
+	struct pollfd pollfds[CLIENT +1];       /* Poll para o recebimento de mensagens com timeout  */
+	int nr_porta;                           /* Número da porta                                   */
+	int nr_relatorio = 0;                   /* Número do relatório gerado                        */
 
 	/* Confere se foi passado o número certo de argumentos */
 	if (argc != 2) {
 		puts("Uso correto: ./servidor <porta>");
 		exit(1);
 	}
-
+	
 	gethostname(localhost, MAXHOSTNAME);
-
 	if ((hp = gethostbyname(localhost)) == NULL){
 		puts ("Nao consegui meu proprio IP");
 		exit (1);
 	}	
 	
-	sa.sin_port = htons(atoi(argv[1]));
+	nr_porta = atoi(argv[1]);
+	sa.sin_port = htons(nr_porta);
 
 	bcopy((char *) hp->h_addr, (char *) &sa.sin_addr, hp->h_length);
 
 	sa.sin_family = hp->h_addrtype;		
 
 	if ((soquete = socket(hp->h_addrtype,SOCK_DGRAM,0)) < 0){
-        puts ( "Nao consegui abrir o soquete" );
-		exit ( 1 );
+        puts ("Nao consegui abrir o soquete");
+		exit (1);
 	}	
 
 	if (bind(soquete, (struct sockaddr *) &sa,sizeof(sa)) < 0){
-		puts ( "Nao consegui fazer o bind" );
-		exit ( 1 );
+		puts ("Nao consegui fazer o bind");
+		exit (1);
 	}		
+
+	// Criando diretório "dados" para armazenar os relatórios
+	struct stat st = {0};
+	if(stat("dados", &st) == -1){
+		mkdir("dados", S_IRWXU);
+	}
 
 	// no pollfds 0 temos as informações do servidor:
 	// qual o socket e qual o tipo de evento a monitorar
@@ -106,40 +118,49 @@ int main (int argc, char *argv[]){
 			}
 		// ocorreu o timeout (poll_res <= 0)
 		} else {
-			break;
+			
+			relatorio_t infos = analisar_dados(expected_seq, num_seqs);
+
+			if (infos.qtd_recebidos != 0){
+				char human_report_filename[64], machine_report_filename[64];
+				sprintf(human_report_filename,   "dados/human_report_%d_%d.txt"   , nr_porta, nr_relatorio);
+				gerar_relatorio_humano(infos, human_report_filename);
+				sprintf(machine_report_filename, "dados/machine_report_%d_%d.json", nr_porta, nr_relatorio);
+				gerar_relatorio_json(infos, machine_report_filename);
+				nr_relatorio++;
+				expected_seq = 0;
+			}
 		}
 	}
 
-	// análise dos números de sequência
-	int qt_lost = 0, qt_ooo = 0, qt_ok = 0;
-	printf("--- Log das mensagens recebidas ---\n");
+	return 0;
+}
+
+
+relatorio_t
+analisar_dados(int expected_seq, int num_seqs[])
+{
+	relatorio_t infos;
+
+	infos.qtd_ok        = 0;
+	infos.qtd_ooo       = 0;
+	infos.qtd_lost      = 0;
+	infos.qtd_recebidos = expected_seq;
+	// memcpy(&infos.num_seqs, &num_seqs, sizeof(int)*expected_seq);
+	for(int i = 0; i < expected_seq; ++i) infos.num_seqs[i] = num_seqs[i];
+
 	for(int i = 0; i < expected_seq; i++){
-		printf("Pacote #%d ", i);
         if(num_seqs[i] != INORDER){
             if (num_seqs[i] == OUTOFORDER){
-				qt_ooo++;
-                printf("<1> Fora de ordem atrasado\n");
+				infos.qtd_ooo++;
             } else if (num_seqs[i] == NOTRECV){
-				qt_lost++;
-				printf("<2> Perdido\n");
+				infos.qtd_lost++;
 			} else {
-				qt_ooo++;
-                printf("<3> Fora de ordem adiantado: pulou [%d] pacotes\n", num_seqs[i]);
+				infos.qtd_ooo++;
             }
         } else { 
-			qt_ok++;
-	    	printf("<0> OK\n");
+			infos.qtd_ok++;
 	    }
     }
-
-	double pct_ooo = qt_ooo/(double)expected_seq * 100.0;
-	double pct_lost = qt_lost/(double)expected_seq * 100.0;
-	double pct_ok = qt_ok/(double)expected_seq * 100.0;
-
-	printf("\nDos %d pacotes recebidos:",expected_seq);
-	printf("\n  Fora de ordem: %5d (%.2lf%%)", qt_ooo, pct_ooo);
-	printf("\n  Perdidos:      %5d (%.2lf%%)", qt_lost, pct_lost);
-	printf("\n  OK:            %5d (%.2lf%%)\n", qt_ok, pct_ok);
-
-	return 0;
+	return infos;
 }
