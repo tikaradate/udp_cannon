@@ -1,7 +1,10 @@
-/* cliente.c
-   Jorge Tikara Vicilli Date
-   Vinicius Lucas Venturi Jabczenski
-   última att: 06-02-2023
+/* 
+	Cliente UDP que manda mensagens com seu número de sequência
+	Disciplina: Redes II
+	Autores:
+		Jorge Lucas Vicilli Jabczenski
+		Vinicius Tikara Venturi Date
+	Última Atualização: 18/02/2023
 */
 
 #include <stdio.h>
