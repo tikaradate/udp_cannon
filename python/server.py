@@ -101,9 +101,8 @@ while(True != False):
         json_header += ("\t\"pacotes_perdidos\":%d,\n" % (lost))
         json_header +=  "\t\"pacotes\": [\n"
 
-
-        human_path   = "../dados/python/human_report" + str(port) + "_" + str(nr_relatorio) + ".txt"
-        json_path = "../dados/python/machine_report" + str(port) + "_" + str(nr_relatorio) + ".json"
+        human_path = "../dados/python/human_report_" + str(port) + "_" + str(nr_relatorio) + ".txt"
+        json_path  = "../dados/python/machine_report_" + str(port) + "_" + str(nr_relatorio) + ".json"
        
         with open(human_path, "w") as f:
             f.write(human_header)
