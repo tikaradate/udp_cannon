@@ -63,7 +63,7 @@ int main (int argc, char *argv[]){
 
 	sa.sin_family = hp->h_addrtype;		
 
-	if ((soquete = socket(hp->h_addrtype,SOCK_DGRAM,0)) < 0){
+	if ((soquete = socket(hp->h_addrtype, SOCK_DGRAM,0)) < 0){
         puts ("Nao consegui abrir o soquete");
 		exit (1);
 	}	
@@ -71,7 +71,7 @@ int main (int argc, char *argv[]){
 	if (bind(soquete, (struct sockaddr *) &sa,sizeof(sa)) < 0){
 		puts ("Nao consegui fazer o bind");
 		exit (1);
-	}		
+	}
 
 	// Criando diretório "dados" para armazenar os relatórios
 	struct stat st = {0};
@@ -118,9 +118,7 @@ int main (int argc, char *argv[]){
 			}
 		// ocorreu o timeout (poll_res <= 0)
 		} else {
-			
 			relatorio_t infos = analisar_dados(expected_seq, num_seqs);
-
 			if (infos.qtd_recebidos != 0){
 				char human_report_filename[64], machine_report_filename[64];
 				sprintf(human_report_filename,   "dados/human_report_%d_%d.txt"   , nr_porta, nr_relatorio);

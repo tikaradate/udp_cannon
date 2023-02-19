@@ -1,7 +1,6 @@
 import socket
 import sys
 from enum import Enum
-import pickle
 
 MAXMESSAGES = 100000
 class Type(Enum):
@@ -40,8 +39,7 @@ while(True != False):
     try:
         bytesAddressPair = server_socket.recvfrom(bufferSize)
         message = bytesAddressPair[0]
-        # recv_seq = int(message.decode('utf-8'))
-        recv_seq = pickle.loads(message)
+        recv_seq = int(message.decode('utf-8'))
         if(expected_seq != recv_seq):
             if(recv_seq < expected_seq):
                 num_seqs[recv_seq] = Type.OUTOFORDER

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8"/>
 <body>
 <h1> Trabalho de Redes II - Canhão UDP</h1>
 
@@ -7,10 +8,19 @@
 
 <img src="tux.gif" style="width:48px;height:48px;">
 
+<p>A proposta do trabalho é avaliar o que em um sistema UDP simples, serão enviadas várias mensagens em sequência para um servidor, que terá 
+que lidar com essa enxurrada.</p>
+<p>Para tal, separamos em partes a implementação e análise dos dados:</p>
+lista aqui com links para as partes apropriadas? 
+<ul>
+
+</ul>
+
 <h3> Cliente </h3>
     <p>O cliente é baseado no cliente normal UDP estudado em aula.</p>
     <p>Entretanto ele recebe um argumento extra: o número de mensagens a serem enviadas.</p>
     <p>Cada mensagem é composta pelo seu número de sequência, a fim de ser analisada pelo servidor.</p>
+    <p>O cliente não espera resposta de volta do servidor, apenas continua a mandar o próximo número de sequência.</p>
 <h3> Servidor </h3>
     <p>No lado do servidor temos um timeout definido, pois o servidor não tem como saber quando a última mensagem foi enviada.</p>
     <p>Ao receber uma mensagem, ele tem consigo um número esperado de sequência, caso este número seja diferente do número recebido, o servidor então consegue identificar 3 casos:</p>
@@ -21,13 +31,14 @@
     </ul>
 <h3> Análise dos dados </h3>
     Dados são maneiros
-
+    <p></p>
 
 <h3> Arquivos </h3>
 <h4> Principais </h4>
 <a href="server.c.txt" >server.c</a>
 <a href="client.c.txt" >client.c</a>
+
 <h4> Apoio</h4>
-Americanas Ltda, Nubank, Primo rico
+Americanas Ltda, Nubank, Primo Rico, Monark Talk
 </body>
 </html>

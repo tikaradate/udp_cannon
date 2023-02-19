@@ -4,7 +4,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
-directory = "dados"
+directory = "dados/c"
 
 files = [directory + "/" + f for f in listdir(directory) if isfile(join(directory, f)) and "json" in f]
 
