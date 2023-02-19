@@ -129,6 +129,7 @@ int main (int argc, char *argv[]){
 				gerar_relatorio_json(infos, machine_report_filename);
 				nr_relatorio++;
 				expected_seq = 0;
+                memset(num_seqs, 0, sizeof(num_seqs));
 			}
 		}
 	}
