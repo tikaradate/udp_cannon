@@ -75,8 +75,11 @@ int main (int argc, char *argv[]){
 
 	// Criando diretório "dados" para armazenar os relatórios
 	struct stat st = {0};
-	if(stat("dados", &st) == -1){
-		mkdir("dados", S_IRWXU);
+	if(stat("../dados", &st) == -1){
+		mkdir("../dados", S_IRWXU);
+	}
+	if(stat("../dados/c", &st) == -1){
+		mkdir("../dados/c", S_IRWXU);
 	}
 
 	// no pollfds 0 temos as informações do servidor:
@@ -121,9 +124,9 @@ int main (int argc, char *argv[]){
 			relatorio_t infos = analisar_dados(expected_seq, num_seqs);
 			if (infos.qtd_recebidos != 0){
 				char human_report_filename[64], machine_report_filename[64];
-				sprintf(human_report_filename,   "dados/human_report_%d_%d.txt"   , nr_porta, nr_relatorio);
+				sprintf(human_report_filename,   "../dados/c/human_report_%d_%d.txt"   , nr_porta, nr_relatorio);
 				gerar_relatorio_humano(infos, human_report_filename);
-				sprintf(machine_report_filename, "dados/machine_report_%d_%d.json", nr_porta, nr_relatorio);
+				sprintf(machine_report_filename, "../dados/c/machine_report_%d_%d.json", nr_porta, nr_relatorio);
 				gerar_relatorio_json(infos, machine_report_filename);
 				nr_relatorio++;
 				expected_seq = 0;
