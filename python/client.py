@@ -1,5 +1,6 @@
 import socket
 import sys
+import pickle
 
 if len(sys.argv) != 4:
     print("Uso: python client.py <host> <porta> <nr_messagens>")
@@ -19,4 +20,5 @@ bufferSize = 1024
 
 client_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 for i in range(nr_msgs):
-    client_socket.sendto(bytearray(str(i), 'utf-8'), address)
+    # client_socket.sendto(bytearray(str(i), 'utf-8'), address)
+    client_socket.sendto(pickle.dumps(i), address)
