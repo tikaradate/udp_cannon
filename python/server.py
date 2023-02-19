@@ -1,5 +1,6 @@
 import socket
 import sys
+import os
 from enum import Enum
 
 MAXMESSAGES = 100000
@@ -24,6 +25,11 @@ except socket.gaierror:
     print("Não foi possível obter IP da máquina")
     exit(1)
 
+if not os.path.isdir('../dados'):
+    os.mkdir('../dados', 0o700)
+if not os.path.isdir('../dados/python'):
+    os.mkdir('../dados/python', 0o700)
+
 port = int(sys.argv[1])
 bufferSize  = 1024
 
@@ -35,7 +41,7 @@ server_socket.bind((host, port))
 num_seqs = [Type.NOTRECV]*MAXMESSAGES
 expected_seq = 0
 nr_relatorio = 0
-server_socket.settimeout(1)
+server_socket.settimeout(2)
 while(True != False):
     try:
         bytesAddressPair = server_socket.recvfrom(bufferSize)
