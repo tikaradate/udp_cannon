@@ -25,11 +25,15 @@ server_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 server_socket.bind((host, port))
 
 server_socket.settimeout(1)
+received = []
 while(True):
     try:
         bytesAddressPair = server_socket.recvfrom(bufferSize)
         message = bytesAddressPair[0]
-        print(message)
+        received.append(message)
     except socket.timeout:
         print("timeout")
         break
+
+for message in received:
+    print(message)
