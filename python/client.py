@@ -19,4 +19,4 @@ bufferSize = 1024
 
 client_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 for i in range(nr_msgs):
-    client_socket.sendto(str(i), address)
+    client_socket.sendto(bytearray(str(i), 'utf-8'), address)
