@@ -34,6 +34,7 @@ server_socket.bind((host, port))
 
 num_seqs = [Type.NOTRECV]*MAXMESSAGES
 expected_seq = 0
+nr_relatorio = 0
 server_socket.settimeout(1)
 while(True != False):
     try:
@@ -51,25 +52,66 @@ while(True != False):
             expected_seq += 1
 
     except socket.timeout:
-        print("timeout")
-        break
+        received = expected_seq
+        if(received == 0):
+            break
+        ooo = 0
+        lost = 0
+        ok = 0
+        
+        human_content = ''
+        json_content = ''
+        for i in range(received):
+            human_content += ("Pacote #%d " % (i))
+            json_content +=  "\t\t{\n"
+            json_content += ("\t\t\t\"id\":%d,\n" % (i))
 
-ooo = 0
-lost = 0
-ok = 0
+            if(num_seqs[i] != Type.INORDER):
+                if(num_seqs[i] == Type.OUTOFORDER):
+                    human_content += "<1> Fora de ordem atrasado\n"
+                    json_content += "\t\t\t\"estado\": 1\n"
+                    ooo += 1
+                elif(num_seqs[i] == Type.NOTRECV):
+                    human_content += "<2> Perdido\n"
+                    json_content += "\t\t\t\"estado\": 2\n"
+                    lost += 1
+                else:
+                    human_content +=  ("<3> Fora de ordem adianto: pulou [%d] pacotes\n" % (num_seqs[i]))
+                    json_content += "\t\t\t\"estado\": 3\n"
+                    ooo += 1
+            else:
+                human_content += "<0> OK\n"
+                json_content += "\t\t\t\"estado\": 0\n"
+                ok += 1
 
-for i in range(expected_seq):
-    if(num_seqs[i] != Type.INORDER):
-        if(num_seqs[i] == Type.OUTOFORDER):
-            ooo += 1
-        elif(num_seqs[i] == Type.NOTRECV):
-            lost += 1
-        else:
-            ooo += 1
-    else:
-        ok += 1
+            json_content += ("\t\t}%c\n" % (',' if (i < received-1) else ' '))
+	    
+        json_content += "\t]\n"
+        json_content += "}"
 
-print("Total: %d" % (expected_seq))
-print("OK: %d" % (ok))
-print("Out of order: %d" % (ooo))
-print("Lost: %d" % (lost))
+        human_header =  ('\nDos %d pacotes recebidos:' % (received))
+        human_header += ('\n  OK:            %5d (%6.2lf%%)' % (ok, ok/received * 100.0))
+        human_header += ('\n  Fora de ordem: %5d (%6.2lf%%)' % (ooo, ooo/received * 100.0))
+        human_header += ('\n  Perdidos:      %5d (%6.2lf%%)\n' % (lost, lost/received * 100.0))
+        
+        json_header =   "{\n"
+        json_header += ("\t\"total_pacotes\":%d,\n" % (received))
+        json_header += ("\t\"pacotes_ok\":%d,\n" % (ok))
+        json_header += ("\t\"pacotes_fora_de_ordem\":%d,\n" % (ooo))
+        json_header += ("\t\"pacotes_perdidos\":%d,\n" % (lost))
+        json_header +=  "\t\"pacotes\": [\n"
+
+
+        human_path   = "../dados/python/human_report" + str(port) + "_" + str(nr_relatorio) + ".txt"
+        json_path = "../dados/python/machine_report" + str(port) + "_" + str(nr_relatorio) + ".json"
+       
+        with open(human_path, "w") as f:
+            f.write(human_header)
+            f.write(human_content)
+        
+        with open(json_path, "w") as f:
+            f.write(json_header)
+            f.write(json_content)
+        nr_relatorio += 1
+        expected_seq = 0
+            
