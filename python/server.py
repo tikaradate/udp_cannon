@@ -54,7 +54,7 @@ while(True != False):
     except socket.timeout:
         received = expected_seq
         if(received == 0):
-            break
+            continue
         ooo = 0
         lost = 0
         ok = 0
@@ -76,7 +76,7 @@ while(True != False):
                     json_content += "\t\t\t\"estado\": 2\n"
                     lost += 1
                 else:
-                    human_content +=  ("<3> Fora de ordem adianto: pulou [%d] pacotes\n" % (num_seqs[i]))
+                    human_content +=  ("<3> Fora de ordem adiantado: pulou [%d] pacotes\n" % (num_seqs[i]))
                     json_content += "\t\t\t\"estado\": 3\n"
                     ooo += 1
             else:
@@ -113,4 +113,6 @@ while(True != False):
             f.write(json_content)
         nr_relatorio += 1
         expected_seq = 0
+        for i in range (expected_seq):
+            num_seqs[i] = Type.NOTRECV
             
