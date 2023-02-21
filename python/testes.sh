@@ -5,9 +5,12 @@ if [ "$1" == "" ] || [ "$2" == "" ]; then
     exit 1
 fi
 
-for qt in $(seq 20);
+for qt in 1000 10000 100000 1000000;
 do 
-    echo $qt
-    python3 client.py $1 $2 100000
-    sleep 3
+    for i in $(seq 15);
+    do
+        echo $qt
+        python3 client.py $1 $2 100000
+        sleep 3
+    done
 done
