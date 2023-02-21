@@ -28,7 +28,7 @@
 #define OUTOFORDER       -2  /* Mensagem chegou fora de ordem  */
 #define TIMEOUT		   1000  /* Timeout do poll em ms          */
 
-relatorio_t analisar_dados(int expected_seq, int num_seqs[]);
+relatorio_t analisar_dados(int expected_seq, int *num_seqs);
 
 int main (int argc, char *argv[]){
 	int expected_seq;                       /* Número de sequência esperado                      */
@@ -38,7 +38,7 @@ int main (int argc, char *argv[]){
 	struct sockaddr_in sa, isa;             /* sa: servidor, isa: cliente                        */
 	struct hostent *hp;                     /* host                                              */
 	int vetor_int[BUFSIZ];                  /* Onde a mensagem recebida é guardada               */
-	int num_seqs[MAXMESSAGES] = {};         /* Guarda informação sobre o número de sequência     */
+	int *num_seqs; 							/* Guarda informação sobre o número de sequência     */
 	char localhost [MAXHOSTNAME];           /* Nome do host local                                */
 	struct pollfd pollfds[CLIENT +1];       /* Poll para o recebimento de mensagens com timeout  */
 	int nr_porta;                           /* Número da porta                                   */
@@ -82,6 +82,7 @@ int main (int argc, char *argv[]){
 		mkdir("../dados/c", S_IRWXU);
 	}
 
+	num_seqs = calloc(MAXMESSAGES, sizeof(int));
 	// no pollfds 0 temos as informações do servidor:
 	// qual o socket e qual o tipo de evento a monitorar
 	pollfds[0].fd = soquete;
@@ -130,7 +131,7 @@ int main (int argc, char *argv[]){
 				gerar_relatorio_json(infos, machine_report_filename);
 				nr_relatorio++;
 				expected_seq = 0;
-                memset(num_seqs, 0, sizeof(num_seqs));
+                memset(num_seqs, 0, MAXMESSAGES*sizeof(int));
 			}
 		}
 	}
@@ -140,7 +141,7 @@ int main (int argc, char *argv[]){
 
 
 relatorio_t
-analisar_dados(int expected_seq, int num_seqs[])
+analisar_dados(int expected_seq, int *num_seqs)
 {
 	relatorio_t infos;
 
