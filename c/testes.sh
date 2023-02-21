@@ -10,7 +10,7 @@ make
 # invocar varias instancias de cliente
 # analisar os dados :)
 
-for qt in 1000 10000 100000;
+for qt in 1000 10000 100000 1000000;
 do 
     for i in $(seq 15);
     do
