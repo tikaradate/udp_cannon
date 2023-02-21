@@ -10,7 +10,7 @@ do
     for i in $(seq 15);
     do
         echo $qt
-        python3 client.py $1 $2 100000
-        sleep 3
+        python3 client.py $1 $2 $qt
+        sleep 5
     done
 done

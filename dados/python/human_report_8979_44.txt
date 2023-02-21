@@ -1,7 +1,7 @@
 
 Dos 100000 pacotes recebidos:
-  OK:            99960 ( 99.96%)
-  Fora de ordem:    40 (  0.04%)
+  OK:            99937 ( 99.94%)
+  Fora de ordem:    63 (  0.06%)
   Perdidos:          0 (  0.00%)
 Pacote #0 <0> OK
 Pacote #1 <0> OK
@@ -507,7 +507,7 @@ Pacote #500 <0> OK
 Pacote #501 <0> OK
 Pacote #502 <0> OK
 Pacote #503 <0> OK
-Pacote #504 <0> OK
+Pacote #504 <3> Fora de ordem adiantado: pulou [70] pacotes
 Pacote #505 <0> OK
 Pacote #506 <0> OK
 Pacote #507 <0> OK
@@ -515,7 +515,7 @@ Pacote #508 <0> OK
 Pacote #509 <0> OK
 Pacote #510 <0> OK
 Pacote #511 <0> OK
-Pacote #512 <3> Fora de ordem adiantado: pulou [66] pacotes
+Pacote #512 <0> OK
 Pacote #513 <0> OK
 Pacote #514 <0> OK
 Pacote #515 <0> OK
@@ -555,7 +555,7 @@ Pacote #548 <0> OK
 Pacote #549 <0> OK
 Pacote #550 <0> OK
 Pacote #551 <0> OK
-Pacote #552 <0> OK
+Pacote #552 <3> Fora de ordem adiantado: pulou [66] pacotes
 Pacote #553 <0> OK
 Pacote #554 <0> OK
 Pacote #555 <0> OK
@@ -563,7 +563,7 @@ Pacote #556 <0> OK
 Pacote #557 <0> OK
 Pacote #558 <0> OK
 Pacote #559 <0> OK
-Pacote #560 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #560 <0> OK
 Pacote #561 <0> OK
 Pacote #562 <0> OK
 Pacote #563 <0> OK
@@ -651,7 +651,7 @@ Pacote #644 <0> OK
 Pacote #645 <0> OK
 Pacote #646 <0> OK
 Pacote #647 <0> OK
-Pacote #648 <0> OK
+Pacote #648 <3> Fora de ordem adiantado: pulou [74] pacotes
 Pacote #649 <0> OK
 Pacote #650 <0> OK
 Pacote #651 <0> OK
@@ -667,7 +667,7 @@ Pacote #660 <0> OK
 Pacote #661 <0> OK
 Pacote #662 <0> OK
 Pacote #663 <0> OK
-Pacote #664 <3> Fora de ordem adiantado: pulou [82] pacotes
+Pacote #664 <0> OK
 Pacote #665 <0> OK
 Pacote #666 <0> OK
 Pacote #667 <0> OK
@@ -707,7 +707,7 @@ Pacote #700 <0> OK
 Pacote #701 <0> OK
 Pacote #702 <0> OK
 Pacote #703 <0> OK
-Pacote #704 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #704 <3> Fora de ordem adiantado: pulou [82] pacotes
 Pacote #705 <0> OK
 Pacote #706 <0> OK
 Pacote #707 <0> OK
@@ -811,7 +811,7 @@ Pacote #804 <0> OK
 Pacote #805 <0> OK
 Pacote #806 <0> OK
 Pacote #807 <0> OK
-Pacote #808 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #808 <0> OK
 Pacote #809 <0> OK
 Pacote #810 <0> OK
 Pacote #811 <0> OK
@@ -843,7 +843,7 @@ Pacote #836 <0> OK
 Pacote #837 <0> OK
 Pacote #838 <0> OK
 Pacote #839 <0> OK
-Pacote #840 <0> OK
+Pacote #840 <3> Fora de ordem adiantado: pulou [66] pacotes
 Pacote #841 <0> OK
 Pacote #842 <0> OK
 Pacote #843 <0> OK
@@ -851,7 +851,7 @@ Pacote #844 <0> OK
 Pacote #845 <0> OK
 Pacote #846 <0> OK
 Pacote #847 <0> OK
-Pacote #848 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #848 <0> OK
 Pacote #849 <0> OK
 Pacote #850 <0> OK
 Pacote #851 <0> OK
@@ -939,7 +939,7 @@ Pacote #932 <0> OK
 Pacote #933 <0> OK
 Pacote #934 <0> OK
 Pacote #935 <0> OK
-Pacote #936 <0> OK
+Pacote #936 <3> Fora de ordem adiantado: pulou [82] pacotes
 Pacote #937 <0> OK
 Pacote #938 <0> OK
 Pacote #939 <0> OK
@@ -955,7 +955,7 @@ Pacote #948 <0> OK
 Pacote #949 <0> OK
 Pacote #950 <0> OK
 Pacote #951 <0> OK
-Pacote #952 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #952 <0> OK
 Pacote #953 <0> OK
 Pacote #954 <0> OK
 Pacote #955 <0> OK
@@ -979,7 +979,7 @@ Pacote #972 <0> OK
 Pacote #973 <0> OK
 Pacote #974 <0> OK
 Pacote #975 <0> OK
-Pacote #976 <3> Fora de ordem adiantado: pulou [58] pacotes
+Pacote #976 <3> Fora de ordem adiantado: pulou [66] pacotes
 Pacote #977 <0> OK
 Pacote #978 <0> OK
 Pacote #979 <0> OK
@@ -995,7 +995,7 @@ Pacote #988 <0> OK
 Pacote #989 <0> OK
 Pacote #990 <0> OK
 Pacote #991 <0> OK
-Pacote #992 <0> OK
+Pacote #992 <3> Fora de ordem adiantado: pulou [82] pacotes
 Pacote #993 <0> OK
 Pacote #994 <0> OK
 Pacote #995 <0> OK
@@ -1033,7 +1033,7 @@ Pacote #1026 <0> OK
 Pacote #1027 <0> OK
 Pacote #1028 <0> OK
 Pacote #1029 <0> OK
-Pacote #1030 <0> OK
+Pacote #1030 <3> Fora de ordem adiantado: pulou [7] pacotes
 Pacote #1031 <0> OK
 Pacote #1032 <0> OK
 Pacote #1033 <0> OK
@@ -1052,7 +1052,7 @@ Pacote #1045 <0> OK
 Pacote #1046 <0> OK
 Pacote #1047 <0> OK
 Pacote #1048 <0> OK
-Pacote #1049 <3> Fora de ordem adiantado: pulou [9] pacotes
+Pacote #1049 <0> OK
 Pacote #1050 <0> OK
 Pacote #1051 <0> OK
 Pacote #1052 <0> OK
@@ -1066,7 +1066,7 @@ Pacote #1059 <0> OK
 Pacote #1060 <0> OK
 Pacote #1061 <0> OK
 Pacote #1062 <0> OK
-Pacote #1063 <0> OK
+Pacote #1063 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1064 <0> OK
 Pacote #1065 <0> OK
 Pacote #1066 <0> OK
@@ -1084,13 +1084,13 @@ Pacote #1077 <0> OK
 Pacote #1078 <0> OK
 Pacote #1079 <0> OK
 Pacote #1080 <0> OK
-Pacote #1081 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1081 <0> OK
 Pacote #1082 <0> OK
 Pacote #1083 <0> OK
 Pacote #1084 <0> OK
 Pacote #1085 <0> OK
-Pacote #1086 <0> OK
-Pacote #1087 <0> OK
+Pacote #1086 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1087 <3> Fora de ordem adiantado: pulou [21] pacotes
 Pacote #1088 <0> OK
 Pacote #1089 <0> OK
 Pacote #1090 <0> OK
@@ -1099,7 +1099,7 @@ Pacote #1092 <0> OK
 Pacote #1093 <0> OK
 Pacote #1094 <0> OK
 Pacote #1095 <0> OK
-Pacote #1096 <0> OK
+Pacote #1096 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1097 <0> OK
 Pacote #1098 <0> OK
 Pacote #1099 <0> OK
@@ -1115,15 +1115,15 @@ Pacote #1108 <0> OK
 Pacote #1109 <0> OK
 Pacote #1110 <0> OK
 Pacote #1111 <0> OK
-Pacote #1112 <3> Fora de ordem adiantado: pulou [66] pacotes
+Pacote #1112 <0> OK
 Pacote #1113 <0> OK
 Pacote #1114 <0> OK
 Pacote #1115 <0> OK
 Pacote #1116 <0> OK
 Pacote #1117 <0> OK
-Pacote #1118 <0> OK
+Pacote #1118 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #1119 <0> OK
-Pacote #1120 <0> OK
+Pacote #1120 <3> Fora de ordem adiantado: pulou [58] pacotes
 Pacote #1121 <0> OK
 Pacote #1122 <0> OK
 Pacote #1123 <0> OK
@@ -1212,10 +1212,10 @@ Pacote #1205 <0> OK
 Pacote #1206 <0> OK
 Pacote #1207 <0> OK
 Pacote #1208 <0> OK
-Pacote #1209 <3> Fora de ordem adiantado: pulou [15] pacotes
+Pacote #1209 <0> OK
 Pacote #1210 <0> OK
 Pacote #1211 <0> OK
-Pacote #1212 <0> OK
+Pacote #1212 <3> Fora de ordem adiantado: pulou [15] pacotes
 Pacote #1213 <0> OK
 Pacote #1214 <0> OK
 Pacote #1215 <0> OK
@@ -1238,20 +1238,20 @@ Pacote #1231 <0> OK
 Pacote #1232 <0> OK
 Pacote #1233 <0> OK
 Pacote #1234 <0> OK
-Pacote #1235 <0> OK
+Pacote #1235 <3> Fora de ordem adiantado: pulou [144] pacotes
 Pacote #1236 <0> OK
 Pacote #1237 <0> OK
 Pacote #1238 <0> OK
-Pacote #1239 <0> OK
+Pacote #1239 <3> Fora de ordem adiantado: pulou [136] pacotes
 Pacote #1240 <0> OK
 Pacote #1241 <0> OK
 Pacote #1242 <0> OK
-Pacote #1243 <3> Fora de ordem adiantado: pulou [18] pacotes
+Pacote #1243 <0> OK
 Pacote #1244 <0> OK
 Pacote #1245 <0> OK
 Pacote #1246 <0> OK
-Pacote #1247 <3> Fora de ordem adiantado: pulou [122] pacotes
-Pacote #1248 <3> Fora de ordem adiantado: pulou [66] pacotes
+Pacote #1247 <0> OK
+Pacote #1248 <0> OK
 Pacote #1249 <0> OK
 Pacote #1250 <0> OK
 Pacote #1251 <0> OK
@@ -1267,13 +1267,13 @@ Pacote #1260 <0> OK
 Pacote #1261 <0> OK
 Pacote #1262 <0> OK
 Pacote #1263 <0> OK
-Pacote #1264 <0> OK
+Pacote #1264 <3> Fora de ordem adiantado: pulou [74] pacotes
 Pacote #1265 <0> OK
 Pacote #1266 <0> OK
 Pacote #1267 <0> OK
 Pacote #1268 <0> OK
 Pacote #1269 <0> OK
-Pacote #1270 <0> OK
+Pacote #1270 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #1271 <0> OK
 Pacote #1272 <0> OK
 Pacote #1273 <0> OK
@@ -1306,7 +1306,7 @@ Pacote #1299 <0> OK
 Pacote #1300 <0> OK
 Pacote #1301 <0> OK
 Pacote #1302 <0> OK
-Pacote #1303 <0> OK
+Pacote #1303 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1304 <0> OK
 Pacote #1305 <0> OK
 Pacote #1306 <0> OK
@@ -1318,13 +1318,13 @@ Pacote #1311 <0> OK
 Pacote #1312 <0> OK
 Pacote #1313 <0> OK
 Pacote #1314 <0> OK
-Pacote #1315 <3> Fora de ordem adiantado: pulou [1] pacotes
+Pacote #1315 <0> OK
 Pacote #1316 <0> OK
 Pacote #1317 <0> OK
 Pacote #1318 <0> OK
 Pacote #1319 <0> OK
 Pacote #1320 <0> OK
-Pacote #1321 <3> Fora de ordem adiantado: pulou [18] pacotes
+Pacote #1321 <0> OK
 Pacote #1322 <0> OK
 Pacote #1323 <0> OK
 Pacote #1324 <0> OK
@@ -1334,12 +1334,12 @@ Pacote #1327 <0> OK
 Pacote #1328 <0> OK
 Pacote #1329 <0> OK
 Pacote #1330 <0> OK
-Pacote #1331 <0> OK
+Pacote #1331 <3> Fora de ordem adiantado: pulou [11] pacotes
 Pacote #1332 <0> OK
 Pacote #1333 <0> OK
 Pacote #1334 <0> OK
 Pacote #1335 <0> OK
-Pacote #1336 <0> OK
+Pacote #1336 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1337 <0> OK
 Pacote #1338 <0> OK
 Pacote #1339 <0> OK
@@ -1356,7 +1356,7 @@ Pacote #1349 <0> OK
 Pacote #1350 <0> OK
 Pacote #1351 <0> OK
 Pacote #1352 <0> OK
-Pacote #1353 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1353 <0> OK
 Pacote #1354 <0> OK
 Pacote #1355 <0> OK
 Pacote #1356 <0> OK
@@ -1364,14 +1364,14 @@ Pacote #1357 <0> OK
 Pacote #1358 <0> OK
 Pacote #1359 <0> OK
 Pacote #1360 <0> OK
-Pacote #1361 <0> OK
+Pacote #1361 <3> Fora de ordem adiantado: pulou [18] pacotes
 Pacote #1362 <0> OK
 Pacote #1363 <0> OK
 Pacote #1364 <0> OK
 Pacote #1365 <0> OK
-Pacote #1366 <0> OK
+Pacote #1366 <3> Fora de ordem adiantado: pulou [19] pacotes
 Pacote #1367 <0> OK
-Pacote #1368 <0> OK
+Pacote #1368 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #1369 <0> OK
 Pacote #1370 <0> OK
 Pacote #1371 <0> OK
@@ -1388,7 +1388,7 @@ Pacote #1381 <0> OK
 Pacote #1382 <0> OK
 Pacote #1383 <0> OK
 Pacote #1384 <0> OK
-Pacote #1385 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1385 <0> OK
 Pacote #1386 <0> OK
 Pacote #1387 <0> OK
 Pacote #1388 <0> OK
@@ -1396,7 +1396,7 @@ Pacote #1389 <0> OK
 Pacote #1390 <0> OK
 Pacote #1391 <0> OK
 Pacote #1392 <0> OK
-Pacote #1393 <0> OK
+Pacote #1393 <3> Fora de ordem adiantado: pulou [11] pacotes
 Pacote #1394 <0> OK
 Pacote #1395 <0> OK
 Pacote #1396 <0> OK
@@ -1406,9 +1406,9 @@ Pacote #1399 <0> OK
 Pacote #1400 <0> OK
 Pacote #1401 <0> OK
 Pacote #1402 <0> OK
-Pacote #1403 <3> Fora de ordem adiantado: pulou [61] pacotes
+Pacote #1403 <0> OK
 Pacote #1404 <0> OK
-Pacote #1405 <0> OK
+Pacote #1405 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1406 <0> OK
 Pacote #1407 <0> OK
 Pacote #1408 <0> OK
@@ -1420,8 +1420,8 @@ Pacote #1413 <0> OK
 Pacote #1414 <0> OK
 Pacote #1415 <0> OK
 Pacote #1416 <0> OK
-Pacote #1417 <3> Fora de ordem adiantado: pulou [16] pacotes
-Pacote #1418 <0> OK
+Pacote #1417 <0> OK
+Pacote #1418 <3> Fora de ordem adiantado: pulou [129] pacotes
 Pacote #1419 <0> OK
 Pacote #1420 <0> OK
 Pacote #1421 <0> OK
@@ -1439,7 +1439,7 @@ Pacote #1432 <0> OK
 Pacote #1433 <0> OK
 Pacote #1434 <0> OK
 Pacote #1435 <0> OK
-Pacote #1436 <0> OK
+Pacote #1436 <3> Fora de ordem adiantado: pulou [149] pacotes
 Pacote #1437 <0> OK
 Pacote #1438 <0> OK
 Pacote #1439 <0> OK
@@ -1448,21 +1448,21 @@ Pacote #1441 <0> OK
 Pacote #1442 <0> OK
 Pacote #1443 <0> OK
 Pacote #1444 <0> OK
-Pacote #1445 <3> Fora de ordem adiantado: pulou [126] pacotes
+Pacote #1445 <0> OK
 Pacote #1446 <0> OK
 Pacote #1447 <0> OK
 Pacote #1448 <0> OK
-Pacote #1449 <0> OK
+Pacote #1449 <3> Fora de ordem adiantado: pulou [15] pacotes
 Pacote #1450 <0> OK
 Pacote #1451 <0> OK
 Pacote #1452 <0> OK
 Pacote #1453 <0> OK
 Pacote #1454 <0> OK
-Pacote #1455 <3> Fora de ordem adiantado: pulou [7] pacotes
+Pacote #1455 <0> OK
 Pacote #1456 <0> OK
 Pacote #1457 <0> OK
-Pacote #1458 <0> OK
-Pacote #1459 <3> Fora de ordem adiantado: pulou [12] pacotes
+Pacote #1458 <3> Fora de ordem adiantado: pulou [109] pacotes
+Pacote #1459 <0> OK
 Pacote #1460 <0> OK
 Pacote #1461 <0> OK
 Pacote #1462 <0> OK
@@ -1480,13 +1480,13 @@ Pacote #1473 <0> OK
 Pacote #1474 <0> OK
 Pacote #1475 <0> OK
 Pacote #1476 <0> OK
-Pacote #1477 <3> Fora de ordem adiantado: pulou [6] pacotes
+Pacote #1477 <3> Fora de ordem adiantado: pulou [11] pacotes
 Pacote #1478 <0> OK
 Pacote #1479 <0> OK
 Pacote #1480 <0> OK
 Pacote #1481 <0> OK
 Pacote #1482 <0> OK
-Pacote #1483 <3> Fora de ordem adiantado: pulou [8] pacotes
+Pacote #1483 <0> OK
 Pacote #1484 <0> OK
 Pacote #1485 <0> OK
 Pacote #1486 <0> OK
@@ -1496,7 +1496,7 @@ Pacote #1489 <0> OK
 Pacote #1490 <0> OK
 Pacote #1491 <0> OK
 Pacote #1492 <0> OK
-Pacote #1493 <0> OK
+Pacote #1493 <3> Fora de ordem adiantado: pulou [14] pacotes
 Pacote #1494 <0> OK
 Pacote #1495 <0> OK
 Pacote #1496 <0> OK
@@ -1506,14 +1506,14 @@ Pacote #1499 <0> OK
 Pacote #1500 <0> OK
 Pacote #1501 <0> OK
 Pacote #1502 <0> OK
-Pacote #1503 <0> OK
+Pacote #1503 <3> Fora de ordem adiantado: pulou [10] pacotes
 Pacote #1504 <0> OK
 Pacote #1505 <0> OK
 Pacote #1506 <0> OK
 Pacote #1507 <0> OK
 Pacote #1508 <0> OK
-Pacote #1509 <3> Fora de ordem adiantado: pulou [16] pacotes
-Pacote #1510 <3> Fora de ordem adiantado: pulou [11] pacotes
+Pacote #1509 <0> OK
+Pacote #1510 <0> OK
 Pacote #1511 <0> OK
 Pacote #1512 <0> OK
 Pacote #1513 <0> OK
@@ -1522,7 +1522,7 @@ Pacote #1515 <0> OK
 Pacote #1516 <0> OK
 Pacote #1517 <0> OK
 Pacote #1518 <0> OK
-Pacote #1519 <0> OK
+Pacote #1519 <3> Fora de ordem adiantado: pulou [144] pacotes
 Pacote #1520 <0> OK
 Pacote #1521 <0> OK
 Pacote #1522 <0> OK
@@ -1553,17 +1553,17 @@ Pacote #1546 <0> OK
 Pacote #1547 <0> OK
 Pacote #1548 <0> OK
 Pacote #1549 <0> OK
-Pacote #1550 <0> OK
+Pacote #1550 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #1551 <0> OK
 Pacote #1552 <0> OK
 Pacote #1553 <0> OK
 Pacote #1554 <0> OK
 Pacote #1555 <0> OK
-Pacote #1556 <3> Fora de ordem adiantado: pulou [70] pacotes
+Pacote #1556 <0> OK
 Pacote #1557 <0> OK
 Pacote #1558 <0> OK
 Pacote #1559 <0> OK
-Pacote #1560 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1560 <0> OK
 Pacote #1561 <0> OK
 Pacote #1562 <0> OK
 Pacote #1563 <0> OK
@@ -1578,15 +1578,15 @@ Pacote #1571 <0> OK
 Pacote #1572 <0> OK
 Pacote #1573 <0> OK
 Pacote #1574 <0> OK
-Pacote #1575 <0> OK
-Pacote #1576 <3> Fora de ordem adiantado: pulou [153] pacotes
+Pacote #1575 <3> Fora de ordem adiantado: pulou [2] pacotes
+Pacote #1576 <0> OK
 Pacote #1577 <0> OK
 Pacote #1578 <0> OK
 Pacote #1579 <0> OK
 Pacote #1580 <0> OK
 Pacote #1581 <0> OK
 Pacote #1582 <0> OK
-Pacote #1583 <0> OK
+Pacote #1583 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1584 <0> OK
 Pacote #1585 <0> OK
 Pacote #1586 <0> OK
@@ -1595,7 +1595,7 @@ Pacote #1588 <0> OK
 Pacote #1589 <0> OK
 Pacote #1590 <0> OK
 Pacote #1591 <0> OK
-Pacote #1592 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1592 <0> OK
 Pacote #1593 <0> OK
 Pacote #1594 <0> OK
 Pacote #1595 <0> OK
@@ -1603,7 +1603,7 @@ Pacote #1596 <0> OK
 Pacote #1597 <0> OK
 Pacote #1598 <0> OK
 Pacote #1599 <0> OK
-Pacote #1600 <0> OK
+Pacote #1600 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #1601 <0> OK
 Pacote #1602 <0> OK
 Pacote #1603 <0> OK
@@ -1611,15 +1611,15 @@ Pacote #1604 <0> OK
 Pacote #1605 <0> OK
 Pacote #1606 <0> OK
 Pacote #1607 <0> OK
-Pacote #1608 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1608 <0> OK
 Pacote #1609 <0> OK
 Pacote #1610 <0> OK
 Pacote #1611 <0> OK
-Pacote #1612 <3> Fora de ordem adiantado: pulou [66] pacotes
+Pacote #1612 <0> OK
 Pacote #1613 <0> OK
 Pacote #1614 <0> OK
-Pacote #1615 <0> OK
-Pacote #1616 <0> OK
+Pacote #1615 <3> Fora de ordem adiantado: pulou [66] pacotes
+Pacote #1616 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1617 <0> OK
 Pacote #1618 <0> OK
 Pacote #1619 <0> OK
@@ -1665,7 +1665,7 @@ Pacote #1658 <0> OK
 Pacote #1659 <0> OK
 Pacote #1660 <0> OK
 Pacote #1661 <0> OK
-Pacote #1662 <0> OK
+Pacote #1662 <3> Fora de ordem adiantado: pulou [30] pacotes
 Pacote #1663 <0> OK
 Pacote #1664 <0> OK
 Pacote #1665 <0> OK
@@ -1688,7 +1688,7 @@ Pacote #1681 <0> OK
 Pacote #1682 <0> OK
 Pacote #1683 <0> OK
 Pacote #1684 <0> OK
-Pacote #1685 <3> Fora de ordem adiantado: pulou [16] pacotes
+Pacote #1685 <0> OK
 Pacote #1686 <0> OK
 Pacote #1687 <0> OK
 Pacote #1688 <0> OK
@@ -1698,7 +1698,7 @@ Pacote #1691 <0> OK
 Pacote #1692 <0> OK
 Pacote #1693 <0> OK
 Pacote #1694 <0> OK
-Pacote #1695 <0> OK
+Pacote #1695 <3> Fora de ordem adiantado: pulou [129] pacotes
 Pacote #1696 <0> OK
 Pacote #1697 <0> OK
 Pacote #1698 <0> OK
@@ -1717,7 +1717,7 @@ Pacote #1710 <0> OK
 Pacote #1711 <0> OK
 Pacote #1712 <0> OK
 Pacote #1713 <0> OK
-Pacote #1714 <3> Fora de ordem adiantado: pulou [13] pacotes
+Pacote #1714 <0> OK
 Pacote #1715 <0> OK
 Pacote #1716 <0> OK
 Pacote #1717 <0> OK
@@ -1759,10 +1759,10 @@ Pacote #1752 <0> OK
 Pacote #1753 <0> OK
 Pacote #1754 <0> OK
 Pacote #1755 <0> OK
-Pacote #1756 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #1756 <0> OK
 Pacote #1757 <0> OK
 Pacote #1758 <0> OK
-Pacote #1759 <0> OK
+Pacote #1759 <3> Fora de ordem adiantado: pulou [74] pacotes
 Pacote #1760 <0> OK
 Pacote #1761 <0> OK
 Pacote #1762 <0> OK
@@ -1803,7 +1803,7 @@ Pacote #1796 <0> OK
 Pacote #1797 <0> OK
 Pacote #1798 <0> OK
 Pacote #1799 <0> OK
-Pacote #1800 <0> OK
+Pacote #1800 <3> Fora de ordem adiantado: pulou [131] pacotes
 Pacote #1801 <0> OK
 Pacote #1802 <0> OK
 Pacote #1803 <0> OK
@@ -1834,10 +1834,10 @@ Pacote #1827 <0> OK
 Pacote #1828 <0> OK
 Pacote #1829 <0> OK
 Pacote #1830 <0> OK
-Pacote #1831 <0> OK
+Pacote #1831 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #1832 <0> OK
 Pacote #1833 <0> OK
-Pacote #1834 <3> Fora de ordem adiantado: pulou [114] pacotes
+Pacote #1834 <0> OK
 Pacote #1835 <0> OK
 Pacote #1836 <0> OK
 Pacote #1837 <0> OK
@@ -1853,20 +1853,20 @@ Pacote #1846 <0> OK
 Pacote #1847 <0> OK
 Pacote #1848 <0> OK
 Pacote #1849 <0> OK
-Pacote #1850 <0> OK
+Pacote #1850 <3> Fora de ordem adiantado: pulou [21] pacotes
 Pacote #1851 <0> OK
 Pacote #1852 <0> OK
 Pacote #1853 <0> OK
 Pacote #1854 <0> OK
 Pacote #1855 <0> OK
 Pacote #1856 <0> OK
-Pacote #1857 <3> Fora de ordem adiantado: pulou [31] pacotes
+Pacote #1857 <0> OK
 Pacote #1858 <0> OK
 Pacote #1859 <0> OK
 Pacote #1860 <0> OK
 Pacote #1861 <0> OK
 Pacote #1862 <0> OK
-Pacote #1863 <0> OK
+Pacote #1863 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #1864 <0> OK
 Pacote #1865 <0> OK
 Pacote #1866 <0> OK
@@ -1899,7 +1899,7 @@ Pacote #1892 <0> OK
 Pacote #1893 <0> OK
 Pacote #1894 <0> OK
 Pacote #1895 <0> OK
-Pacote #1896 <0> OK
+Pacote #1896 <3> Fora de ordem adiantado: pulou [17] pacotes
 Pacote #1897 <0> OK
 Pacote #1898 <0> OK
 Pacote #1899 <0> OK
@@ -1936,7 +1936,7 @@ Pacote #1929 <0> OK
 Pacote #1930 <0> OK
 Pacote #1931 <0> OK
 Pacote #1932 <0> OK
-Pacote #1933 <0> OK
+Pacote #1933 <3> Fora de ordem adiantado: pulou [21] pacotes
 Pacote #1934 <0> OK
 Pacote #1935 <0> OK
 Pacote #1936 <0> OK
@@ -2003,7 +2003,7 @@ Pacote #1996 <0> OK
 Pacote #1997 <0> OK
 Pacote #1998 <0> OK
 Pacote #1999 <0> OK
-Pacote #2000 <0> OK
+Pacote #2000 <3> Fora de ordem adiantado: pulou [60] pacotes
 Pacote #2001 <0> OK
 Pacote #2002 <0> OK
 Pacote #2003 <0> OK
@@ -2145,7 +2145,7 @@ Pacote #2138 <0> OK
 Pacote #2139 <0> OK
 Pacote #2140 <0> OK
 Pacote #2141 <0> OK
-Pacote #2142 <0> OK
+Pacote #2142 <3> Fora de ordem adiantado: pulou [72] pacotes
 Pacote #2143 <0> OK
 Pacote #2144 <0> OK
 Pacote #2145 <0> OK
@@ -2289,7 +2289,7 @@ Pacote #2282 <0> OK
 Pacote #2283 <0> OK
 Pacote #2284 <0> OK
 Pacote #2285 <0> OK
-Pacote #2286 <0> OK
+Pacote #2286 <3> Fora de ordem adiantado: pulou [74] pacotes
 Pacote #2287 <0> OK
 Pacote #2288 <0> OK
 Pacote #2289 <0> OK
@@ -2414,7 +2414,7 @@ Pacote #2407 <0> OK
 Pacote #2408 <0> OK
 Pacote #2409 <0> OK
 Pacote #2410 <0> OK
-Pacote #2411 <0> OK
+Pacote #2411 <3> Fora de ordem adiantado: pulou [55] pacotes
 Pacote #2412 <0> OK
 Pacote #2413 <0> OK
 Pacote #2414 <0> OK
@@ -2570,7 +2570,7 @@ Pacote #2563 <0> OK
 Pacote #2564 <0> OK
 Pacote #2565 <0> OK
 Pacote #2566 <0> OK
-Pacote #2567 <0> OK
+Pacote #2567 <3> Fora de ordem adiantado: pulou [16] pacotes
 Pacote #2568 <0> OK
 Pacote #2569 <0> OK
 Pacote #2570 <0> OK
@@ -2720,7 +2720,7 @@ Pacote #2713 <0> OK
 Pacote #2714 <0> OK
 Pacote #2715 <0> OK
 Pacote #2716 <0> OK
-Pacote #2717 <0> OK
+Pacote #2717 <3> Fora de ordem adiantado: pulou [10] pacotes
 Pacote #2718 <0> OK
 Pacote #2719 <0> OK
 Pacote #2720 <0> OK
@@ -2799,7 +2799,7 @@ Pacote #2792 <0> OK
 Pacote #2793 <0> OK
 Pacote #2794 <0> OK
 Pacote #2795 <0> OK
-Pacote #2796 <0> OK
+Pacote #2796 <3> Fora de ordem adiantado: pulou [9] pacotes
 Pacote #2797 <0> OK
 Pacote #2798 <0> OK
 Pacote #2799 <0> OK
@@ -2870,7 +2870,7 @@ Pacote #2863 <0> OK
 Pacote #2864 <0> OK
 Pacote #2865 <0> OK
 Pacote #2866 <0> OK
-Pacote #2867 <0> OK
+Pacote #2867 <3> Fora de ordem adiantado: pulou [1] pacotes
 Pacote #2868 <0> OK
 Pacote #2869 <0> OK
 Pacote #2870 <0> OK
@@ -3090,7 +3090,7 @@ Pacote #3083 <0> OK
 Pacote #3084 <0> OK
 Pacote #3085 <0> OK
 Pacote #3086 <0> OK
-Pacote #3087 <0> OK
+Pacote #3087 <3> Fora de ordem adiantado: pulou [10] pacotes
 Pacote #3088 <0> OK
 Pacote #3089 <0> OK
 Pacote #3090 <0> OK
@@ -3166,7 +3166,7 @@ Pacote #3159 <0> OK
 Pacote #3160 <0> OK
 Pacote #3161 <0> OK
 Pacote #3162 <0> OK
-Pacote #3163 <0> OK
+Pacote #3163 <3> Fora de ordem adiantado: pulou [6] pacotes
 Pacote #3164 <0> OK
 Pacote #3165 <0> OK
 Pacote #3166 <0> OK
@@ -3321,7 +3321,7 @@ Pacote #3314 <0> OK
 Pacote #3315 <0> OK
 Pacote #3316 <0> OK
 Pacote #3317 <0> OK
-Pacote #3318 <0> OK
+Pacote #3318 <3> Fora de ordem adiantado: pulou [15] pacotes
 Pacote #3319 <0> OK
 Pacote #3320 <0> OK
 Pacote #3321 <0> OK

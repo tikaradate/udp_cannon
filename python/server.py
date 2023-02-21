@@ -3,7 +3,7 @@ import sys
 import os
 from enum import Enum
 
-MAXMESSAGES = 100000
+MAXMESSAGES = 1000000
 class Type(Enum):
     NOTRECV = 0
     INORDER = -1
