@@ -6,7 +6,7 @@ import numpy as np
 
 def last_number(e):
     return int(e[28:].split('.')[0])
-directory = "dados/c"
+directory = "dados/python"
 files = [directory + "/" + f for f in listdir(directory) if isfile(join(directory, f)) and "json" in f]
 files.sort(key=last_number)
 # for f in files:
