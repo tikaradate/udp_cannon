@@ -5,7 +5,11 @@ if [ "$1" == "" ] || [ "$2" == "" ]; then
     exit 1
 fi
 
-for qt in 1000 10000 100000 1000000;
+
+
+python3 client.py $1 $2 1000
+
+for qt in 1000 100000;
 do 
     for i in $(seq 15);
     do

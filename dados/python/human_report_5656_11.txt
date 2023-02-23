@@ -1,0 +1,939 @@
+
+Dos 934 pacotes recebidos:
+  OK:              757 ( 81.05%)
+  Fora de ordem:   177 ( 18.95%)
+  Perdidos:          0 (  0.00%)
+Pacote #0 <0> OK
+Pacote #1 <0> OK
+Pacote #2 <0> OK
+Pacote #3 <0> OK
+Pacote #4 <0> OK
+Pacote #5 <0> OK
+Pacote #6 <0> OK
+Pacote #7 <0> OK
+Pacote #8 <0> OK
+Pacote #9 <0> OK
+Pacote #10 <0> OK
+Pacote #11 <0> OK
+Pacote #12 <0> OK
+Pacote #13 <0> OK
+Pacote #14 <0> OK
+Pacote #15 <0> OK
+Pacote #16 <0> OK
+Pacote #17 <0> OK
+Pacote #18 <0> OK
+Pacote #19 <0> OK
+Pacote #20 <0> OK
+Pacote #21 <0> OK
+Pacote #22 <0> OK
+Pacote #23 <0> OK
+Pacote #24 <0> OK
+Pacote #25 <0> OK
+Pacote #26 <0> OK
+Pacote #27 <0> OK
+Pacote #28 <0> OK
+Pacote #29 <0> OK
+Pacote #30 <0> OK
+Pacote #31 <0> OK
+Pacote #32 <0> OK
+Pacote #33 <0> OK
+Pacote #34 <0> OK
+Pacote #35 <0> OK
+Pacote #36 <0> OK
+Pacote #37 <0> OK
+Pacote #38 <0> OK
+Pacote #39 <0> OK
+Pacote #40 <0> OK
+Pacote #41 <0> OK
+Pacote #42 <0> OK
+Pacote #43 <0> OK
+Pacote #44 <0> OK
+Pacote #45 <0> OK
+Pacote #46 <0> OK
+Pacote #47 <0> OK
+Pacote #48 <0> OK
+Pacote #49 <0> OK
+Pacote #50 <0> OK
+Pacote #51 <0> OK
+Pacote #52 <0> OK
+Pacote #53 <0> OK
+Pacote #54 <0> OK
+Pacote #55 <0> OK
+Pacote #56 <0> OK
+Pacote #57 <0> OK
+Pacote #58 <0> OK
+Pacote #59 <0> OK
+Pacote #60 <0> OK
+Pacote #61 <0> OK
+Pacote #62 <0> OK
+Pacote #63 <0> OK
+Pacote #64 <0> OK
+Pacote #65 <0> OK
+Pacote #66 <0> OK
+Pacote #67 <0> OK
+Pacote #68 <0> OK
+Pacote #69 <0> OK
+Pacote #70 <0> OK
+Pacote #71 <0> OK
+Pacote #72 <0> OK
+Pacote #73 <0> OK
+Pacote #74 <0> OK
+Pacote #75 <0> OK
+Pacote #76 <0> OK
+Pacote #77 <0> OK
+Pacote #78 <0> OK
+Pacote #79 <0> OK
+Pacote #80 <0> OK
+Pacote #81 <0> OK
+Pacote #82 <0> OK
+Pacote #83 <0> OK
+Pacote #84 <0> OK
+Pacote #85 <0> OK
+Pacote #86 <0> OK
+Pacote #87 <0> OK
+Pacote #88 <0> OK
+Pacote #89 <0> OK
+Pacote #90 <0> OK
+Pacote #91 <0> OK
+Pacote #92 <0> OK
+Pacote #93 <0> OK
+Pacote #94 <0> OK
+Pacote #95 <0> OK
+Pacote #96 <0> OK
+Pacote #97 <0> OK
+Pacote #98 <0> OK
+Pacote #99 <0> OK
+Pacote #100 <0> OK
+Pacote #101 <0> OK
+Pacote #102 <0> OK
+Pacote #103 <0> OK
+Pacote #104 <0> OK
+Pacote #105 <0> OK
+Pacote #106 <0> OK
+Pacote #107 <0> OK
+Pacote #108 <0> OK
+Pacote #109 <0> OK
+Pacote #110 <0> OK
+Pacote #111 <0> OK
+Pacote #112 <0> OK
+Pacote #113 <0> OK
+Pacote #114 <0> OK
+Pacote #115 <0> OK
+Pacote #116 <0> OK
+Pacote #117 <0> OK
+Pacote #118 <0> OK
+Pacote #119 <0> OK
+Pacote #120 <0> OK
+Pacote #121 <0> OK
+Pacote #122 <0> OK
+Pacote #123 <0> OK
+Pacote #124 <0> OK
+Pacote #125 <0> OK
+Pacote #126 <0> OK
+Pacote #127 <0> OK
+Pacote #128 <0> OK
+Pacote #129 <0> OK
+Pacote #130 <0> OK
+Pacote #131 <0> OK
+Pacote #132 <0> OK
+Pacote #133 <0> OK
+Pacote #134 <0> OK
+Pacote #135 <0> OK
+Pacote #136 <0> OK
+Pacote #137 <0> OK
+Pacote #138 <0> OK
+Pacote #139 <0> OK
+Pacote #140 <0> OK
+Pacote #141 <0> OK
+Pacote #142 <0> OK
+Pacote #143 <0> OK
+Pacote #144 <0> OK
+Pacote #145 <0> OK
+Pacote #146 <0> OK
+Pacote #147 <0> OK
+Pacote #148 <0> OK
+Pacote #149 <0> OK
+Pacote #150 <0> OK
+Pacote #151 <0> OK
+Pacote #152 <0> OK
+Pacote #153 <0> OK
+Pacote #154 <0> OK
+Pacote #155 <0> OK
+Pacote #156 <0> OK
+Pacote #157 <0> OK
+Pacote #158 <0> OK
+Pacote #159 <0> OK
+Pacote #160 <0> OK
+Pacote #161 <0> OK
+Pacote #162 <0> OK
+Pacote #163 <0> OK
+Pacote #164 <0> OK
+Pacote #165 <0> OK
+Pacote #166 <0> OK
+Pacote #167 <0> OK
+Pacote #168 <0> OK
+Pacote #169 <0> OK
+Pacote #170 <0> OK
+Pacote #171 <0> OK
+Pacote #172 <0> OK
+Pacote #173 <0> OK
+Pacote #174 <0> OK
+Pacote #175 <0> OK
+Pacote #176 <0> OK
+Pacote #177 <0> OK
+Pacote #178 <0> OK
+Pacote #179 <0> OK
+Pacote #180 <0> OK
+Pacote #181 <0> OK
+Pacote #182 <0> OK
+Pacote #183 <0> OK
+Pacote #184 <0> OK
+Pacote #185 <0> OK
+Pacote #186 <0> OK
+Pacote #187 <0> OK
+Pacote #188 <0> OK
+Pacote #189 <0> OK
+Pacote #190 <0> OK
+Pacote #191 <0> OK
+Pacote #192 <0> OK
+Pacote #193 <0> OK
+Pacote #194 <0> OK
+Pacote #195 <0> OK
+Pacote #196 <0> OK
+Pacote #197 <0> OK
+Pacote #198 <0> OK
+Pacote #199 <0> OK
+Pacote #200 <0> OK
+Pacote #201 <0> OK
+Pacote #202 <0> OK
+Pacote #203 <0> OK
+Pacote #204 <0> OK
+Pacote #205 <0> OK
+Pacote #206 <0> OK
+Pacote #207 <0> OK
+Pacote #208 <0> OK
+Pacote #209 <0> OK
+Pacote #210 <0> OK
+Pacote #211 <0> OK
+Pacote #212 <0> OK
+Pacote #213 <0> OK
+Pacote #214 <0> OK
+Pacote #215 <0> OK
+Pacote #216 <0> OK
+Pacote #217 <0> OK
+Pacote #218 <0> OK
+Pacote #219 <0> OK
+Pacote #220 <0> OK
+Pacote #221 <0> OK
+Pacote #222 <0> OK
+Pacote #223 <0> OK
+Pacote #224 <0> OK
+Pacote #225 <0> OK
+Pacote #226 <0> OK
+Pacote #227 <0> OK
+Pacote #228 <0> OK
+Pacote #229 <0> OK
+Pacote #230 <0> OK
+Pacote #231 <0> OK
+Pacote #232 <0> OK
+Pacote #233 <0> OK
+Pacote #234 <0> OK
+Pacote #235 <0> OK
+Pacote #236 <0> OK
+Pacote #237 <0> OK
+Pacote #238 <0> OK
+Pacote #239 <0> OK
+Pacote #240 <0> OK
+Pacote #241 <0> OK
+Pacote #242 <0> OK
+Pacote #243 <0> OK
+Pacote #244 <0> OK
+Pacote #245 <0> OK
+Pacote #246 <0> OK
+Pacote #247 <0> OK
+Pacote #248 <0> OK
+Pacote #249 <0> OK
+Pacote #250 <0> OK
+Pacote #251 <0> OK
+Pacote #252 <0> OK
+Pacote #253 <0> OK
+Pacote #254 <0> OK
+Pacote #255 <0> OK
+Pacote #256 <0> OK
+Pacote #257 <0> OK
+Pacote #258 <0> OK
+Pacote #259 <0> OK
+Pacote #260 <0> OK
+Pacote #261 <0> OK
+Pacote #262 <0> OK
+Pacote #263 <0> OK
+Pacote #264 <0> OK
+Pacote #265 <0> OK
+Pacote #266 <0> OK
+Pacote #267 <0> OK
+Pacote #268 <0> OK
+Pacote #269 <0> OK
+Pacote #270 <0> OK
+Pacote #271 <0> OK
+Pacote #272 <0> OK
+Pacote #273 <0> OK
+Pacote #274 <0> OK
+Pacote #275 <0> OK
+Pacote #276 <0> OK
+Pacote #277 <0> OK
+Pacote #278 <0> OK
+Pacote #279 <0> OK
+Pacote #280 <0> OK
+Pacote #281 <0> OK
+Pacote #282 <0> OK
+Pacote #283 <0> OK
+Pacote #284 <0> OK
+Pacote #285 <0> OK
+Pacote #286 <0> OK
+Pacote #287 <0> OK
+Pacote #288 <0> OK
+Pacote #289 <0> OK
+Pacote #290 <0> OK
+Pacote #291 <0> OK
+Pacote #292 <0> OK
+Pacote #293 <0> OK
+Pacote #294 <0> OK
+Pacote #295 <0> OK
+Pacote #296 <0> OK
+Pacote #297 <0> OK
+Pacote #298 <0> OK
+Pacote #299 <0> OK
+Pacote #300 <0> OK
+Pacote #301 <0> OK
+Pacote #302 <0> OK
+Pacote #303 <0> OK
+Pacote #304 <0> OK
+Pacote #305 <0> OK
+Pacote #306 <0> OK
+Pacote #307 <0> OK
+Pacote #308 <0> OK
+Pacote #309 <0> OK
+Pacote #310 <0> OK
+Pacote #311 <0> OK
+Pacote #312 <0> OK
+Pacote #313 <0> OK
+Pacote #314 <0> OK
+Pacote #315 <0> OK
+Pacote #316 <0> OK
+Pacote #317 <0> OK
+Pacote #318 <0> OK
+Pacote #319 <0> OK
+Pacote #320 <0> OK
+Pacote #321 <0> OK
+Pacote #322 <0> OK
+Pacote #323 <0> OK
+Pacote #324 <0> OK
+Pacote #325 <0> OK
+Pacote #326 <0> OK
+Pacote #327 <0> OK
+Pacote #328 <0> OK
+Pacote #329 <0> OK
+Pacote #330 <0> OK
+Pacote #331 <0> OK
+Pacote #332 <0> OK
+Pacote #333 <0> OK
+Pacote #334 <0> OK
+Pacote #335 <0> OK
+Pacote #336 <0> OK
+Pacote #337 <0> OK
+Pacote #338 <0> OK
+Pacote #339 <0> OK
+Pacote #340 <0> OK
+Pacote #341 <0> OK
+Pacote #342 <0> OK
+Pacote #343 <0> OK
+Pacote #344 <0> OK
+Pacote #345 <0> OK
+Pacote #346 <0> OK
+Pacote #347 <0> OK
+Pacote #348 <0> OK
+Pacote #349 <0> OK
+Pacote #350 <0> OK
+Pacote #351 <0> OK
+Pacote #352 <0> OK
+Pacote #353 <0> OK
+Pacote #354 <0> OK
+Pacote #355 <0> OK
+Pacote #356 <0> OK
+Pacote #357 <0> OK
+Pacote #358 <0> OK
+Pacote #359 <0> OK
+Pacote #360 <0> OK
+Pacote #361 <0> OK
+Pacote #362 <0> OK
+Pacote #363 <0> OK
+Pacote #364 <0> OK
+Pacote #365 <0> OK
+Pacote #366 <0> OK
+Pacote #367 <0> OK
+Pacote #368 <0> OK
+Pacote #369 <0> OK
+Pacote #370 <0> OK
+Pacote #371 <0> OK
+Pacote #372 <0> OK
+Pacote #373 <0> OK
+Pacote #374 <0> OK
+Pacote #375 <0> OK
+Pacote #376 <0> OK
+Pacote #377 <0> OK
+Pacote #378 <0> OK
+Pacote #379 <0> OK
+Pacote #380 <0> OK
+Pacote #381 <0> OK
+Pacote #382 <0> OK
+Pacote #383 <0> OK
+Pacote #384 <0> OK
+Pacote #385 <0> OK
+Pacote #386 <0> OK
+Pacote #387 <0> OK
+Pacote #388 <0> OK
+Pacote #389 <0> OK
+Pacote #390 <0> OK
+Pacote #391 <0> OK
+Pacote #392 <0> OK
+Pacote #393 <0> OK
+Pacote #394 <0> OK
+Pacote #395 <0> OK
+Pacote #396 <0> OK
+Pacote #397 <0> OK
+Pacote #398 <0> OK
+Pacote #399 <0> OK
+Pacote #400 <0> OK
+Pacote #401 <0> OK
+Pacote #402 <0> OK
+Pacote #403 <0> OK
+Pacote #404 <0> OK
+Pacote #405 <0> OK
+Pacote #406 <0> OK
+Pacote #407 <0> OK
+Pacote #408 <0> OK
+Pacote #409 <0> OK
+Pacote #410 <0> OK
+Pacote #411 <0> OK
+Pacote #412 <1> Fora de ordem atrasado
+Pacote #413 <1> Fora de ordem atrasado
+Pacote #414 <1> Fora de ordem atrasado
+Pacote #415 <1> Fora de ordem atrasado
+Pacote #416 <3> Fora de ordem adiantado: pulou [12] pacotes
+Pacote #417 <0> OK
+Pacote #418 <0> OK
+Pacote #419 <0> OK
+Pacote #420 <0> OK
+Pacote #421 <0> OK
+Pacote #422 <0> OK
+Pacote #423 <0> OK
+Pacote #424 <3> Fora de ordem adiantado: pulou [20] pacotes
+Pacote #425 <0> OK
+Pacote #426 <0> OK
+Pacote #427 <0> OK
+Pacote #428 <0> OK
+Pacote #429 <0> OK
+Pacote #430 <0> OK
+Pacote #431 <0> OK
+Pacote #432 <3> Fora de ordem adiantado: pulou [28] pacotes
+Pacote #433 <0> OK
+Pacote #434 <0> OK
+Pacote #435 <0> OK
+Pacote #436 <0> OK
+Pacote #437 <0> OK
+Pacote #438 <0> OK
+Pacote #439 <0> OK
+Pacote #440 <0> OK
+Pacote #441 <0> OK
+Pacote #442 <0> OK
+Pacote #443 <0> OK
+Pacote #444 <0> OK
+Pacote #445 <0> OK
+Pacote #446 <0> OK
+Pacote #447 <0> OK
+Pacote #448 <0> OK
+Pacote #449 <0> OK
+Pacote #450 <0> OK
+Pacote #451 <0> OK
+Pacote #452 <0> OK
+Pacote #453 <0> OK
+Pacote #454 <0> OK
+Pacote #455 <0> OK
+Pacote #456 <0> OK
+Pacote #457 <0> OK
+Pacote #458 <0> OK
+Pacote #459 <0> OK
+Pacote #460 <0> OK
+Pacote #461 <0> OK
+Pacote #462 <0> OK
+Pacote #463 <0> OK
+Pacote #464 <0> OK
+Pacote #465 <0> OK
+Pacote #466 <0> OK
+Pacote #467 <0> OK
+Pacote #468 <0> OK
+Pacote #469 <0> OK
+Pacote #470 <0> OK
+Pacote #471 <0> OK
+Pacote #472 <0> OK
+Pacote #473 <0> OK
+Pacote #474 <0> OK
+Pacote #475 <0> OK
+Pacote #476 <0> OK
+Pacote #477 <0> OK
+Pacote #478 <0> OK
+Pacote #479 <0> OK
+Pacote #480 <0> OK
+Pacote #481 <0> OK
+Pacote #482 <0> OK
+Pacote #483 <0> OK
+Pacote #484 <0> OK
+Pacote #485 <0> OK
+Pacote #486 <0> OK
+Pacote #487 <0> OK
+Pacote #488 <0> OK
+Pacote #489 <0> OK
+Pacote #490 <0> OK
+Pacote #491 <0> OK
+Pacote #492 <0> OK
+Pacote #493 <0> OK
+Pacote #494 <0> OK
+Pacote #495 <0> OK
+Pacote #496 <0> OK
+Pacote #497 <0> OK
+Pacote #498 <0> OK
+Pacote #499 <0> OK
+Pacote #500 <0> OK
+Pacote #501 <0> OK
+Pacote #502 <0> OK
+Pacote #503 <0> OK
+Pacote #504 <0> OK
+Pacote #505 <0> OK
+Pacote #506 <0> OK
+Pacote #507 <0> OK
+Pacote #508 <0> OK
+Pacote #509 <0> OK
+Pacote #510 <0> OK
+Pacote #511 <0> OK
+Pacote #512 <0> OK
+Pacote #513 <0> OK
+Pacote #514 <0> OK
+Pacote #515 <0> OK
+Pacote #516 <0> OK
+Pacote #517 <0> OK
+Pacote #518 <1> Fora de ordem atrasado
+Pacote #519 <1> Fora de ordem atrasado
+Pacote #520 <1> Fora de ordem atrasado
+Pacote #521 <1> Fora de ordem atrasado
+Pacote #522 <1> Fora de ordem atrasado
+Pacote #523 <1> Fora de ordem atrasado
+Pacote #524 <1> Fora de ordem atrasado
+Pacote #525 <1> Fora de ordem atrasado
+Pacote #526 <1> Fora de ordem atrasado
+Pacote #527 <1> Fora de ordem atrasado
+Pacote #528 <1> Fora de ordem atrasado
+Pacote #529 <1> Fora de ordem atrasado
+Pacote #530 <1> Fora de ordem atrasado
+Pacote #531 <1> Fora de ordem atrasado
+Pacote #532 <1> Fora de ordem atrasado
+Pacote #533 <1> Fora de ordem atrasado
+Pacote #534 <1> Fora de ordem atrasado
+Pacote #535 <1> Fora de ordem atrasado
+Pacote #536 <1> Fora de ordem atrasado
+Pacote #537 <1> Fora de ordem atrasado
+Pacote #538 <1> Fora de ordem atrasado
+Pacote #539 <1> Fora de ordem atrasado
+Pacote #540 <1> Fora de ordem atrasado
+Pacote #541 <1> Fora de ordem atrasado
+Pacote #542 <1> Fora de ordem atrasado
+Pacote #543 <1> Fora de ordem atrasado
+Pacote #544 <1> Fora de ordem atrasado
+Pacote #545 <1> Fora de ordem atrasado
+Pacote #546 <1> Fora de ordem atrasado
+Pacote #547 <1> Fora de ordem atrasado
+Pacote #548 <1> Fora de ordem atrasado
+Pacote #549 <1> Fora de ordem atrasado
+Pacote #550 <1> Fora de ordem atrasado
+Pacote #551 <1> Fora de ordem atrasado
+Pacote #552 <1> Fora de ordem atrasado
+Pacote #553 <1> Fora de ordem atrasado
+Pacote #554 <1> Fora de ordem atrasado
+Pacote #555 <1> Fora de ordem atrasado
+Pacote #556 <1> Fora de ordem atrasado
+Pacote #557 <1> Fora de ordem atrasado
+Pacote #558 <1> Fora de ordem atrasado
+Pacote #559 <1> Fora de ordem atrasado
+Pacote #560 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #561 <0> OK
+Pacote #562 <0> OK
+Pacote #563 <0> OK
+Pacote #564 <0> OK
+Pacote #565 <0> OK
+Pacote #566 <0> OK
+Pacote #567 <0> OK
+Pacote #568 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #569 <0> OK
+Pacote #570 <3> Fora de ordem adiantado: pulou [68] pacotes
+Pacote #571 <0> OK
+Pacote #572 <0> OK
+Pacote #573 <0> OK
+Pacote #574 <0> OK
+Pacote #575 <0> OK
+Pacote #576 <0> OK
+Pacote #577 <0> OK
+Pacote #578 <0> OK
+Pacote #579 <0> OK
+Pacote #580 <0> OK
+Pacote #581 <0> OK
+Pacote #582 <0> OK
+Pacote #583 <0> OK
+Pacote #584 <0> OK
+Pacote #585 <0> OK
+Pacote #586 <0> OK
+Pacote #587 <0> OK
+Pacote #588 <0> OK
+Pacote #589 <0> OK
+Pacote #590 <0> OK
+Pacote #591 <0> OK
+Pacote #592 <0> OK
+Pacote #593 <0> OK
+Pacote #594 <0> OK
+Pacote #595 <0> OK
+Pacote #596 <0> OK
+Pacote #597 <0> OK
+Pacote #598 <0> OK
+Pacote #599 <0> OK
+Pacote #600 <0> OK
+Pacote #601 <0> OK
+Pacote #602 <0> OK
+Pacote #603 <0> OK
+Pacote #604 <0> OK
+Pacote #605 <0> OK
+Pacote #606 <0> OK
+Pacote #607 <0> OK
+Pacote #608 <0> OK
+Pacote #609 <0> OK
+Pacote #610 <0> OK
+Pacote #611 <0> OK
+Pacote #612 <0> OK
+Pacote #613 <0> OK
+Pacote #614 <0> OK
+Pacote #615 <0> OK
+Pacote #616 <0> OK
+Pacote #617 <0> OK
+Pacote #618 <0> OK
+Pacote #619 <0> OK
+Pacote #620 <0> OK
+Pacote #621 <0> OK
+Pacote #622 <0> OK
+Pacote #623 <0> OK
+Pacote #624 <0> OK
+Pacote #625 <0> OK
+Pacote #626 <0> OK
+Pacote #627 <0> OK
+Pacote #628 <0> OK
+Pacote #629 <0> OK
+Pacote #630 <0> OK
+Pacote #631 <0> OK
+Pacote #632 <0> OK
+Pacote #633 <0> OK
+Pacote #634 <0> OK
+Pacote #635 <0> OK
+Pacote #636 <0> OK
+Pacote #637 <0> OK
+Pacote #638 <0> OK
+Pacote #639 <0> OK
+Pacote #640 <0> OK
+Pacote #641 <0> OK
+Pacote #642 <0> OK
+Pacote #643 <0> OK
+Pacote #644 <0> OK
+Pacote #645 <0> OK
+Pacote #646 <0> OK
+Pacote #647 <0> OK
+Pacote #648 <0> OK
+Pacote #649 <0> OK
+Pacote #650 <0> OK
+Pacote #651 <0> OK
+Pacote #652 <0> OK
+Pacote #653 <0> OK
+Pacote #654 <0> OK
+Pacote #655 <1> Fora de ordem atrasado
+Pacote #656 <1> Fora de ordem atrasado
+Pacote #657 <1> Fora de ordem atrasado
+Pacote #658 <1> Fora de ordem atrasado
+Pacote #659 <1> Fora de ordem atrasado
+Pacote #660 <1> Fora de ordem atrasado
+Pacote #661 <1> Fora de ordem atrasado
+Pacote #662 <1> Fora de ordem atrasado
+Pacote #663 <1> Fora de ordem atrasado
+Pacote #664 <1> Fora de ordem atrasado
+Pacote #665 <1> Fora de ordem atrasado
+Pacote #666 <1> Fora de ordem atrasado
+Pacote #667 <1> Fora de ordem atrasado
+Pacote #668 <1> Fora de ordem atrasado
+Pacote #669 <1> Fora de ordem atrasado
+Pacote #670 <1> Fora de ordem atrasado
+Pacote #671 <1> Fora de ordem atrasado
+Pacote #672 <1> Fora de ordem atrasado
+Pacote #673 <1> Fora de ordem atrasado
+Pacote #674 <1> Fora de ordem atrasado
+Pacote #675 <1> Fora de ordem atrasado
+Pacote #676 <1> Fora de ordem atrasado
+Pacote #677 <1> Fora de ordem atrasado
+Pacote #678 <1> Fora de ordem atrasado
+Pacote #679 <1> Fora de ordem atrasado
+Pacote #680 <1> Fora de ordem atrasado
+Pacote #681 <1> Fora de ordem atrasado
+Pacote #682 <1> Fora de ordem atrasado
+Pacote #683 <1> Fora de ordem atrasado
+Pacote #684 <1> Fora de ordem atrasado
+Pacote #685 <1> Fora de ordem atrasado
+Pacote #686 <1> Fora de ordem atrasado
+Pacote #687 <1> Fora de ordem atrasado
+Pacote #688 <1> Fora de ordem atrasado
+Pacote #689 <1> Fora de ordem atrasado
+Pacote #690 <1> Fora de ordem atrasado
+Pacote #691 <1> Fora de ordem atrasado
+Pacote #692 <1> Fora de ordem atrasado
+Pacote #693 <1> Fora de ordem atrasado
+Pacote #694 <1> Fora de ordem atrasado
+Pacote #695 <1> Fora de ordem atrasado
+Pacote #696 <1> Fora de ordem atrasado
+Pacote #697 <1> Fora de ordem atrasado
+Pacote #698 <1> Fora de ordem atrasado
+Pacote #699 <1> Fora de ordem atrasado
+Pacote #700 <1> Fora de ordem atrasado
+Pacote #701 <1> Fora de ordem atrasado
+Pacote #702 <1> Fora de ordem atrasado
+Pacote #703 <1> Fora de ordem atrasado
+Pacote #704 <1> Fora de ordem atrasado
+Pacote #705 <1> Fora de ordem atrasado
+Pacote #706 <1> Fora de ordem atrasado
+Pacote #707 <1> Fora de ordem atrasado
+Pacote #708 <1> Fora de ordem atrasado
+Pacote #709 <1> Fora de ordem atrasado
+Pacote #710 <1> Fora de ordem atrasado
+Pacote #711 <1> Fora de ordem atrasado
+Pacote #712 <1> Fora de ordem atrasado
+Pacote #713 <1> Fora de ordem atrasado
+Pacote #714 <1> Fora de ordem atrasado
+Pacote #715 <1> Fora de ordem atrasado
+Pacote #716 <1> Fora de ordem atrasado
+Pacote #717 <1> Fora de ordem atrasado
+Pacote #718 <1> Fora de ordem atrasado
+Pacote #719 <1> Fora de ordem atrasado
+Pacote #720 <3> Fora de ordem adiantado: pulou [80] pacotes
+Pacote #721 <0> OK
+Pacote #722 <0> OK
+Pacote #723 <0> OK
+Pacote #724 <0> OK
+Pacote #725 <0> OK
+Pacote #726 <0> OK
+Pacote #727 <0> OK
+Pacote #728 <0> OK
+Pacote #729 <0> OK
+Pacote #730 <0> OK
+Pacote #731 <0> OK
+Pacote #732 <0> OK
+Pacote #733 <0> OK
+Pacote #734 <0> OK
+Pacote #735 <0> OK
+Pacote #736 <0> OK
+Pacote #737 <0> OK
+Pacote #738 <0> OK
+Pacote #739 <0> OK
+Pacote #740 <0> OK
+Pacote #741 <0> OK
+Pacote #742 <0> OK
+Pacote #743 <0> OK
+Pacote #744 <0> OK
+Pacote #745 <0> OK
+Pacote #746 <0> OK
+Pacote #747 <0> OK
+Pacote #748 <0> OK
+Pacote #749 <0> OK
+Pacote #750 <0> OK
+Pacote #751 <0> OK
+Pacote #752 <0> OK
+Pacote #753 <0> OK
+Pacote #754 <0> OK
+Pacote #755 <0> OK
+Pacote #756 <0> OK
+Pacote #757 <0> OK
+Pacote #758 <0> OK
+Pacote #759 <0> OK
+Pacote #760 <0> OK
+Pacote #761 <0> OK
+Pacote #762 <0> OK
+Pacote #763 <0> OK
+Pacote #764 <0> OK
+Pacote #765 <0> OK
+Pacote #766 <0> OK
+Pacote #767 <0> OK
+Pacote #768 <0> OK
+Pacote #769 <0> OK
+Pacote #770 <0> OK
+Pacote #771 <0> OK
+Pacote #772 <0> OK
+Pacote #773 <0> OK
+Pacote #774 <0> OK
+Pacote #775 <0> OK
+Pacote #776 <0> OK
+Pacote #777 <0> OK
+Pacote #778 <0> OK
+Pacote #779 <0> OK
+Pacote #780 <0> OK
+Pacote #781 <0> OK
+Pacote #782 <0> OK
+Pacote #783 <0> OK
+Pacote #784 <0> OK
+Pacote #785 <0> OK
+Pacote #786 <0> OK
+Pacote #787 <0> OK
+Pacote #788 <0> OK
+Pacote #789 <0> OK
+Pacote #790 <0> OK
+Pacote #791 <0> OK
+Pacote #792 <0> OK
+Pacote #793 <0> OK
+Pacote #794 <0> OK
+Pacote #795 <0> OK
+Pacote #796 <0> OK
+Pacote #797 <0> OK
+Pacote #798 <0> OK
+Pacote #799 <0> OK
+Pacote #800 <0> OK
+Pacote #801 <0> OK
+Pacote #802 <0> OK
+Pacote #803 <0> OK
+Pacote #804 <0> OK
+Pacote #805 <0> OK
+Pacote #806 <1> Fora de ordem atrasado
+Pacote #807 <1> Fora de ordem atrasado
+Pacote #808 <1> Fora de ordem atrasado
+Pacote #809 <1> Fora de ordem atrasado
+Pacote #810 <1> Fora de ordem atrasado
+Pacote #811 <1> Fora de ordem atrasado
+Pacote #812 <1> Fora de ordem atrasado
+Pacote #813 <1> Fora de ordem atrasado
+Pacote #814 <1> Fora de ordem atrasado
+Pacote #815 <1> Fora de ordem atrasado
+Pacote #816 <1> Fora de ordem atrasado
+Pacote #817 <1> Fora de ordem atrasado
+Pacote #818 <1> Fora de ordem atrasado
+Pacote #819 <1> Fora de ordem atrasado
+Pacote #820 <1> Fora de ordem atrasado
+Pacote #821 <1> Fora de ordem atrasado
+Pacote #822 <1> Fora de ordem atrasado
+Pacote #823 <1> Fora de ordem atrasado
+Pacote #824 <1> Fora de ordem atrasado
+Pacote #825 <1> Fora de ordem atrasado
+Pacote #826 <1> Fora de ordem atrasado
+Pacote #827 <1> Fora de ordem atrasado
+Pacote #828 <1> Fora de ordem atrasado
+Pacote #829 <1> Fora de ordem atrasado
+Pacote #830 <1> Fora de ordem atrasado
+Pacote #831 <1> Fora de ordem atrasado
+Pacote #832 <1> Fora de ordem atrasado
+Pacote #833 <1> Fora de ordem atrasado
+Pacote #834 <1> Fora de ordem atrasado
+Pacote #835 <1> Fora de ordem atrasado
+Pacote #836 <1> Fora de ordem atrasado
+Pacote #837 <1> Fora de ordem atrasado
+Pacote #838 <1> Fora de ordem atrasado
+Pacote #839 <1> Fora de ordem atrasado
+Pacote #840 <1> Fora de ordem atrasado
+Pacote #841 <1> Fora de ordem atrasado
+Pacote #842 <1> Fora de ordem atrasado
+Pacote #843 <1> Fora de ordem atrasado
+Pacote #844 <1> Fora de ordem atrasado
+Pacote #845 <1> Fora de ordem atrasado
+Pacote #846 <1> Fora de ordem atrasado
+Pacote #847 <1> Fora de ordem atrasado
+Pacote #848 <1> Fora de ordem atrasado
+Pacote #849 <1> Fora de ordem atrasado
+Pacote #850 <1> Fora de ordem atrasado
+Pacote #851 <1> Fora de ordem atrasado
+Pacote #852 <1> Fora de ordem atrasado
+Pacote #853 <1> Fora de ordem atrasado
+Pacote #854 <1> Fora de ordem atrasado
+Pacote #855 <1> Fora de ordem atrasado
+Pacote #856 <1> Fora de ordem atrasado
+Pacote #857 <1> Fora de ordem atrasado
+Pacote #858 <1> Fora de ordem atrasado
+Pacote #859 <1> Fora de ordem atrasado
+Pacote #860 <1> Fora de ordem atrasado
+Pacote #861 <1> Fora de ordem atrasado
+Pacote #862 <1> Fora de ordem atrasado
+Pacote #863 <1> Fora de ordem atrasado
+Pacote #864 <3> Fora de ordem adiantado: pulou [74] pacotes
+Pacote #865 <0> OK
+Pacote #866 <0> OK
+Pacote #867 <0> OK
+Pacote #868 <0> OK
+Pacote #869 <0> OK
+Pacote #870 <0> OK
+Pacote #871 <0> OK
+Pacote #872 <0> OK
+Pacote #873 <0> OK
+Pacote #874 <0> OK
+Pacote #875 <0> OK
+Pacote #876 <0> OK
+Pacote #877 <0> OK
+Pacote #878 <0> OK
+Pacote #879 <0> OK
+Pacote #880 <0> OK
+Pacote #881 <0> OK
+Pacote #882 <0> OK
+Pacote #883 <0> OK
+Pacote #884 <0> OK
+Pacote #885 <0> OK
+Pacote #886 <0> OK
+Pacote #887 <0> OK
+Pacote #888 <0> OK
+Pacote #889 <0> OK
+Pacote #890 <0> OK
+Pacote #891 <0> OK
+Pacote #892 <0> OK
+Pacote #893 <0> OK
+Pacote #894 <0> OK
+Pacote #895 <0> OK
+Pacote #896 <0> OK
+Pacote #897 <0> OK
+Pacote #898 <0> OK
+Pacote #899 <0> OK
+Pacote #900 <0> OK
+Pacote #901 <0> OK
+Pacote #902 <0> OK
+Pacote #903 <0> OK
+Pacote #904 <0> OK
+Pacote #905 <0> OK
+Pacote #906 <0> OK
+Pacote #907 <0> OK
+Pacote #908 <0> OK
+Pacote #909 <0> OK
+Pacote #910 <0> OK
+Pacote #911 <0> OK
+Pacote #912 <0> OK
+Pacote #913 <0> OK
+Pacote #914 <0> OK
+Pacote #915 <0> OK
+Pacote #916 <0> OK
+Pacote #917 <0> OK
+Pacote #918 <0> OK
+Pacote #919 <0> OK
+Pacote #920 <0> OK
+Pacote #921 <0> OK
+Pacote #922 <0> OK
+Pacote #923 <0> OK
+Pacote #924 <0> OK
+Pacote #925 <0> OK
+Pacote #926 <0> OK
+Pacote #927 <0> OK
+Pacote #928 <0> OK
+Pacote #929 <0> OK
+Pacote #930 <0> OK
+Pacote #931 <0> OK
+Pacote #932 <0> OK
+Pacote #933 <0> OK
