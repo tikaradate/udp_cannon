@@ -6,12 +6,10 @@ import numpy as np
 
 def last_number(e):
     return int(e[28:].split('.')[0])
-directory = "dados/python"
+directory = "dados/c"
 files = [directory + "/" + f for f in listdir(directory) if isfile(join(directory, f)) and "json" in f]
 files.sort(key=last_number)
-# for f in files:
-#     print(f)
-# exit(1)
+
 total_files = 0
 total_list  = []
 ok_files    = 0
@@ -46,13 +44,14 @@ for f in files:
         ok_array = np.array(ok_list)
         lost_array = np.array(lost_list)
         out_of_order_array = np.array(out_of_order_list)
-
-        plt.bar(x_axis, ok_array, color='r')
-        plt.bar(x_axis, lost_array, bottom = ok_array, color='b')
-        plt.bar(x_axis, out_of_order_array, bottom = ok_array + lost_array, color='g')
+        plt.clf()
+        plt.bar(x_axis, ok_array, color='r', label = "OK")
+        plt.bar(x_axis, lost_array, bottom = ok_array, color='b', label = "Perdidos")
+        plt.bar(x_axis, out_of_order_array, bottom = ok_array + lost_array, color='g', label = 'Fora de Ordem')
 
         plt.xlabel("Testes")
         plt.ylabel("Quantidade")
+        plt.legend()
         plt.savefig('plot' + str(size) + '.png')
 
         qt_files = len(files)

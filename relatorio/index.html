@@ -2,43 +2,61 @@
 <html>
 <meta charset="UTF-8"/>
 <body>
-<h1> Trabalho de Redes II - Canhão UDP</h1>
+<center><h1> Trabalho de Redes II - Canhão UDP</h1></center>
 
-<h2> Autores: Jorge L. V. Jabczenski & Vinicius T. V. Date </h2>
+<center><h2> Autores: Jorge L. V. Jabczenski & Vinicius T. V. Date </h2></center>
 
-<img src="tux.gif" style="width:48px;height:48px;">
+<img src="tux.gif" style="width:100px;height:100px;">
 
-<p>A proposta do trabalho é avaliar o que em um sistema UDP simples, serão enviadas várias mensagens em sequência para um servidor, que terá 
-que lidar com essa enxurrada.</p>
+<p>A proposta do trabalho é avaliar o que acontece em um sistema UDP simples, serão enviadas várias mensagens em sequência para um servidor, que terá 
+que lidar com essa grande quantidade de requisições, por isso o nome "Canhão UDP".</p>
 <p>Para tal, separamos em partes a implementação e análise dos dados:</p>
 lista aqui com links para as partes apropriadas? 
 <ul>
 
 </ul>
 
+<center><h2>Implementação</h2></center>
+Foram feitas duas implementações, uma em Python e uma em C a fim de comparações e pirações.
+<img src="computer.gif" style="width:107px;height:35px;">
 <h3> Cliente </h3>
-    <p>O cliente é baseado no cliente normal UDP estudado em aula.</p>
+    <p>O cliente é baseado no cliente normal UDP disponibilizado como exemplo no site da disciplina.</p>
     <p>Entretanto ele recebe um argumento extra: o número de mensagens a serem enviadas.</p>
-    <p>Cada mensagem é composta pelo seu número de sequência, a fim de ser analisada pelo servidor.</p>
-    <p>O cliente não espera resposta de volta do servidor, apenas continua a mandar o próximo número de sequência.</p>
+    <p>Cada mensagem é composta pelo seu número de sequência, com o fim de ser analisada pelo servidor.</p>
+    <p>O cliente não espera resposta de volta do servidor, apenas continua a mandar a próxima mensagem.</p>
 <h3> Servidor </h3>
-    <p>No lado do servidor temos um timeout definido, pois o servidor não tem como saber quando a última mensagem foi enviada.</p>
-    <p>Ao receber uma mensagem, ele tem consigo um número esperado de sequência, caso este número seja diferente do número recebido, o servidor então consegue identificar 3 casos:</p>
+    <p>O servidor também é baseado no modelo disponibilizado no site da disciplina.</p>
+    <p>Definimos um timeout, pois o servidor não tem como saber quando a última mensagem foi enviada. Para os nossos testes, utilizamos um timeout de 3 segundos</p>
+    <p>Ao receber uma mensagem, o servidor tem consigo um número esperado de sequência, caso este número seja diferente do número recebido, o servidor então consegue identificar a mensagem em um dos 3 casos:</p>
     <ul>
-        <li>Se o número de sequência recebido for menor do que o esperado, quer dizer que o pacote chegou fora de ordem.</li>
-        <li>Se ocorre o contrário, o número de sequência recebido for maior que o esperado, o pacote também chegou fora de ordem e possivelmente os pacotes anteriores não foram recebidos.</li>
-        <li>Se, por fim, o número for o esperado, o recebimento ocorreu de forma esperada.</li>
+        <li>Se o número de sequência recebido for menor do que o esperado, então o pacote chegou fora de ordem.</li>
+        <li>Se ocorre o contrário e o número de sequência recebido for maior que o esperado, o pacote também chegou fora de ordem e possivelmente os pacotes anteriores não foram recebidos.</li>
+        <li>Mas se o número for o esperado, o recebimento ocorreu de forma correta.</li>
     </ul>
-<h3> Análise dos dados </h3>
-    Dados são maneiros
-    <p></p>
+    <p>Desta forma foi possível separar as mensagens que chegaram e criar relatórios com essa informação.</p>
+    <p>Dois tipos de relatórios foram criados, um que é um formato amigável aos humanos e outro que foi codificado em json, a fim de gerar gráficos e analisar os dados.</p>
 
+<center><h2> Análise dos dados </h3></center>
+
+<h3>C</h3>
+    <p>Para 1000 mensagens o servidor conseguiu suportar a tarefa, todas mensagens chegaram de acordo.</p>
+    <p>Conforme o número de mensagens sobe, o número de erros cresce, mas não parece haver um padrão tão óbvio, 
+       pois algumas vezes todas mensagens são entregues enquanto em outros momentos temos os erros.</p>
+    <p>Esse padrão de falta de padrão se repete ainda no maior teste feito, aquele com um milhão de mensagens. 
+        Um dos testes perdeu metade das mensagens,enquanto outros foram feitos sem quase nenhum erro.</p>
+
+<h3>Python</h3>
+    <p>Para o menor caso de teste, podemos ver que a velocidade do Python afeta o processamento, 
+        perdendo constantemente cerca de 10% das mensagens.</p>
+    <p></p>
 <h3> Arquivos </h3>
 <h4> Principais </h4>
-<a href="server.c.txt" >server.c</a>
-<a href="client.c.txt" >client.c</a>
+<a href="server.c.txt">server.c</a>
+<a href="client.c.txt">client.c</a>
+<a href="server.py.txt">server.c</a>
+<a href="client.py.txt">client.c</a>
 
 <h4> Apoio</h4>
-Americanas Ltda, Nubank, Primo Rico, Monark Talk
+Americanas Ltda, Bradesco, Nubank, Primo Rico, Monark Talks, ChatGPT, Elias
 </body>
 </html>

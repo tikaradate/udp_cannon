@@ -19,28 +19,28 @@
 int 
 main(int argc, char *argv[])
 {  
-	int sockdescr;
+	int sockdescr;         // Descritor do socket
+	struct sockaddr_in sa; // Endereço do socket
+	struct hostent *hp;    // Guarda informações sobre o host
+	char *host;            // Nome do host
 
-	struct sockaddr_in sa;
-	struct hostent *hp;
-	char *host;
-
-	unsigned int i;
 	unsigned int nr_mensagens;
 
+	// Confere o número de argumentos da linha de comando
 	if(argc != 4) {
 		puts("Uso correto: ./cliente <nome-servidor> <porta> <nr_mensagens>");
 		exit(1);
 	}
 
-	host = argv[1];
-	nr_mensagens = atoi(argv[3]);
+	host = argv[1];               // Recupera o nome do host
+	nr_mensagens = atoi(argv[3]); // Recupera a quantidade de mensagens que vão ser enviadas
 
 	if((hp = gethostbyname(host)) == NULL){
 		puts("Nao consegui obter endereco IP do servidor.");
 		exit(1);
 	}
-
+	
+	// copia os bytes do 
 	bcopy((char *)hp->h_addr, (char *)&sa.sin_addr, hp->h_length);
 	sa.sin_family = hp->h_addrtype;
 
@@ -51,9 +51,10 @@ main(int argc, char *argv[])
 		exit(1);
 	}
 
+	// vetor que guarda o número de sequência da mensagem atual
 	int vetor_de_uma_posicao[1];
 
-	for (i = 0; i < nr_mensagens; ++i){
+	for (int i = 0; i < nr_mensagens; ++i){
 		vetor_de_uma_posicao[0] = i;
 		if(sendto(sockdescr, vetor_de_uma_posicao, sizeof(vetor_de_uma_posicao), 0, (struct
 			sockaddr *) &sa, sizeof sa) != sizeof(vetor_de_uma_posicao)){
