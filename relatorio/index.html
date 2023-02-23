@@ -5,20 +5,20 @@
 <center><h1> Trabalho de Redes II - Canhão UDP</h1></center>
 
 <center><h2> Autores: Jorge L. V. Jabczenski & Vinicius T. V. Date </h2></center>
-
+<center>
 <img src="tux.gif" style="width:100px;height:100px;">
-
+</center>
 <p>A proposta do trabalho é avaliar o que acontece em um sistema UDP simples, serão enviadas várias mensagens em sequência para um servidor, que terá 
 que lidar com essa grande quantidade de requisições, por isso o nome "Canhão UDP".</p>
 <p>Para tal, separamos em partes a implementação e análise dos dados:</p>
-lista aqui com links para as partes apropriadas? 
 <ul>
-
+    <li><a href="#implementacao"> Implementação </a></li>
+    <li><a href="#analise"> Análise dos dados </a></li>
 </ul>
 
-<center><h2>Implementação</h2></center>
-Foram feitas duas implementações, uma em Python e uma em C a fim de comparações e pirações.
-<img src="computer.gif" style="width:107px;height:35px;">
+<center><h2 id=implementacao > Implementação</h2></center>
+<center><img src="computer.gif" style="width:107px;height:35px;"></center>
+Foram feitas duas implementações, uma em Python e uma em C,  a fim de comparar a quantidade de pacotes perdidos nas implementações das duas linguagens.
 <h3> Cliente </h3>
     <p>O cliente é baseado no cliente normal UDP disponibilizado como exemplo no site da disciplina.</p>
     <p>Entretanto ele recebe um argumento extra: o número de mensagens a serem enviadas.</p>
@@ -36,7 +36,8 @@ Foram feitas duas implementações, uma em Python e uma em C a fim de comparaç�
     <p>Desta forma foi possível separar as mensagens que chegaram e criar relatórios com essa informação.</p>
     <p>Dois tipos de relatórios foram criados, um que é um formato amigável aos humanos e outro que foi codificado em json, a fim de gerar gráficos e analisar os dados.</p>
 
-<center><h2> Análise dos dados </h3></center>
+<center><h2 id=analise > Análise dos dados </h3></center>
+<center><img src="dog.gif" style="width:120px;height:104x;"></center>
 
 <h3>C</h3>
     <p>Para 1000 mensagens o servidor conseguiu suportar a tarefa, todas mensagens chegaram de acordo.</p>
