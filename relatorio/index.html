@@ -37,10 +37,38 @@ Foram feitas duas implementações, uma em Python e uma em C,  a fim de comparar
     <p>Dois tipos de relatórios foram criados, um que é um formato amigável aos humanos e outro que foi codificado em json, a fim de gerar gráficos e analisar os dados.</p>
 
 <center><h2 id=analise > Análise dos dados </h3></center>
-<center><img src="dog.gif" style="width:120px;height:104x;"></center>
+<center><img src="dog.gif" style="width:120px;height:104px;"></center>
 
 <h3>C</h3>
-    <p>Para 1000 mensagens o servidor conseguiu suportar a tarefa, todas mensagens chegaram de acordo.</p>
+<!-- <div class="row">
+    <div class="column">
+      <img src="dados/c_plot1000.png" alt="1000" style="width:25%">
+    </div>
+    <div class="column">
+        <img src="dados/c_plot10000.png" alt="10000" style="width:25%">
+    </div>
+    <div class="column">
+        <img src="dados/c_plot100000.png" alt="100000" style="width:25%">
+    </div>
+    <div class="column">
+        <img src="dados/c_plot1000000.png" alt="1000000" style="width:25%">
+    </div>
+</div>  -->
+
+<div id="banner">
+    <div class="inline-block">
+        <img src ="dados/c_plot1000.png">
+    </div>
+
+    <div class="inline-block">
+        <img src ="dados/c_plot10000.png">
+    </div>
+
+    <div class="inline-block">
+        <img src ="dados/c_plot100000.png">
+    </div>
+</div>
+<p>Para 1000 mensagens o servidor conseguiu suportar a tarefa, todas mensagens chegaram de acordo.</p>
     <p>Conforme o número de mensagens sobe, o número de erros cresce, mas não parece haver um padrão tão óbvio, 
        pois algumas vezes todas mensagens são entregues enquanto em outros momentos temos os erros.</p>
     <p>Esse padrão de falta de padrão se repete ainda no maior teste feito, aquele com um milhão de mensagens. 
@@ -50,14 +78,22 @@ Foram feitas duas implementações, uma em Python e uma em C,  a fim de comparar
     <p>Para o menor caso de teste, podemos ver que a velocidade do Python afeta o processamento, 
         perdendo constantemente cerca de 10% das mensagens.</p>
     <p></p>
+
 <h3> Arquivos </h3>
 <h4> Principais </h4>
-<a href="server.c.txt">server.c</a>
-<a href="client.c.txt">client.c</a>
-<a href="server.py.txt">server.c</a>
-<a href="client.py.txt">client.c</a>
+<a href="codigo/server.c.txt">server.c</a>
+<a href="codigo/client.c.txt">client.c</a>
+<a href="codigo/server.py.txt">server.py</a>
+<a href="codigo/client.py.txt">client.py</a>
 
-<h4> Apoio</h4>
-Americanas Ltda, Bradesco, Nubank, Primo Rico, Monark Talks, ChatGPT, Elias
+<h4> De apoio </h4>
+<a href="codigo/relatorio.c.txt">relatorio.c</a>
+<a href="codigo/relatorio.h.txt">relatorio.h</a>
+<a href="codigo/consts.h.txt">consts.h</a>
+<a href="codigo/Makefile.txt">Makefile</a>
 </body>
+
+Para uma organização melhor dos programas e seus dados, acesse o github: 
+<a href="github.com/tikaradate/udp_cannon">Projeto</a>
+
 </html>
