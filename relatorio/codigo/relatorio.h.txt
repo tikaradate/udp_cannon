@@ -1,10 +1,10 @@
 /* 
-	Funções de apoio que geram relatórios
+	Funcoes de apoio que geram relatorios
 	Disciplina: CI1061-Redes II
 	Autores:
 		Jorge Lucas Vicilli Jabczenski
 		Vinicius Tikara Venturi Date
-	Última Atualização: 18/02/2023
+	Ultima Atualizacao: 18/02/2023
 */
 #ifndef __RELATORIOS__
 #define __RELATORIOS__
@@ -18,15 +18,15 @@ typedef struct relatorio_s {
     int qtd_ok;                // Quantidade de pacotes ok
     int qtd_ooo;               // Quantidade de pacotes fora de ordem
     int qtd_lost;              // Quantidade de pacotes perdidos
-    int num_seqs[MAXMESSAGES]; // Número máximo de mensagens
+    int num_seqs[MAXMESSAGES]; // Numero maximo de mensagens
     char nome_arquivo[64];     // Nome do arquivo que vai ser criado
 } relatorio_t;
 
 
-/* Gera um relatório amigável para olhos humanos */
+/* Gera um relatorio amigavel para olhos humanos */
 void gerar_relatorio_humano(relatorio_t infos, char filename[]);
 
-/* Gera um relatório para as máquinas sem coração */
+/* Gera um relatorio para as maquinas sem coracao */
 void gerar_relatorio_json(relatorio_t infos, char filename[]);
 
 void imprime_relat(relatorio_t r);

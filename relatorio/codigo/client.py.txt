@@ -1,10 +1,10 @@
 # 
-#	Cliente UDP em Python que manda mensagens com seu número de sequência
+#	Cliente UDP em Python que manda mensagens com seu numero de sequencia
 #	Disciplina: CI1061-Redes II
 #	Autores:
 #		Jorge Lucas Vicilli Jabczenski
 #		Vinicius Tikara Venturi Date
-#	Última Atualização: 18/02/2023
+#	Ultima Atualizacao: 18/02/2023
 #
 import socket
 import sys
@@ -16,7 +16,7 @@ if len(sys.argv) != 4:
 try:
     host = socket.gethostbyname(sys.argv[1])
 except socket.gaierror:
-    print("Não foi possível obter endereço IP do servidor")
+    print("Nao foi possivel obter endereco IP do servidor")
     exit(1)
 
 port = int(sys.argv[2])

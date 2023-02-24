@@ -1,10 +1,10 @@
 /* 
-	Funções de apoio que geram relatórios
+	Funcoes de apoio que geram relatorios
 	Disciplina: CI1061-Redes II
 	Autores:
 		Jorge Lucas Vicilli Jabczenski
 		Vinicius Tikara Venturi Date
-	Última Atualização: 18/02/2023
+	Ultima Atualizacao: 18/02/2023
 */
 #include "relatorios.h"
 void 

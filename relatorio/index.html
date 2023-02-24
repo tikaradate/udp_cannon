@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8"/>
+<font size="+2">This is bigger text.</font>
+<style>
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+p {
+    font-size: 19px;
+    margin-left: 19px;
+}
+
+</style>
 <body>
 <center><h1> Trabalho de Redes II - Canhão UDP</h1></center>
 
@@ -18,7 +34,7 @@ que lidar com essa grande quantidade de requisições, por isso o nome "Canhão 
 
 <center><h2 id=implementacao > Implementação</h2></center>
 <center><img src="computer.gif" style="width:107px;height:35px;"></center>
-Foram feitas duas implementações, uma em Python e uma em C,  a fim de comparar a quantidade de pacotes perdidos nas implementações das duas linguagens.
+<p>Foram feitas duas implementações, uma em Python e uma em C,  a fim de comparar a quantidade de pacotes perdidos nas implementações das duas linguagens.</p>
 <h3> Cliente </h3>
     <p>O cliente é baseado no cliente normal UDP disponibilizado como exemplo no site da disciplina.</p>
     <p>Entretanto ele recebe um argumento extra: o número de mensagens a serem enviadas.</p>
@@ -33,67 +49,105 @@ Foram feitas duas implementações, uma em Python e uma em C,  a fim de comparar
         <li>Se ocorre o contrário e o número de sequência recebido for maior que o esperado, o pacote também chegou fora de ordem e possivelmente os pacotes anteriores não foram recebidos.</li>
         <li>Mas se o número for o esperado, o recebimento ocorreu de forma correta.</li>
     </ul>
+    <p>
+        Não foi possível imprimir durante o recebimento de mensagens, a função de impressão é muito demorada para o tipo de projeto feito,
+        foi necessário interpretar os dados após.
+    </p>
     <p>Desta forma foi possível separar as mensagens que chegaram e criar relatórios com essa informação.</p>
     <p>Dois tipos de relatórios foram criados, um que é um formato amigável aos humanos e outro que foi codificado em json, a fim de gerar gráficos e analisar os dados.</p>
 
 <center><h2 id=analise > Análise dos dados </h3></center>
 <center><img src="dog.gif" style="width:120px;height:104px;"></center>
 
-<h3>C</h3>
-<!-- <div class="row">
+<center><h3>Dados do projeto em C</h3></center>
+<center>
+<div class="row">
     <div class="column">
-      <img src="dados/c_plot1000.png" alt="1000" style="width:25%">
+      <img src="dados/c_plot1000.png" alt="1000" style="width:40%">
     </div>
-    <div class="column">
-        <img src="dados/c_plot10000.png" alt="10000" style="width:25%">
-    </div>
-    <div class="column">
-        <img src="dados/c_plot100000.png" alt="100000" style="width:25%">
-    </div>
-    <div class="column">
-        <img src="dados/c_plot1000000.png" alt="1000000" style="width:25%">
-    </div>
-</div>  -->
+</div> 
+</center>
 
-<div id="banner">
-    <div class="inline-block">
-        <img src ="dados/c_plot1000.png">
-    </div>
-
-    <div class="inline-block">
-        <img src ="dados/c_plot10000.png">
-    </div>
-
-    <div class="inline-block">
-        <img src ="dados/c_plot100000.png">
-    </div>
-</div>
 <p>Para 1000 mensagens o servidor conseguiu suportar a tarefa, todas mensagens chegaram de acordo.</p>
-    <p>Conforme o número de mensagens sobe, o número de erros cresce, mas não parece haver um padrão tão óbvio, 
-       pois algumas vezes todas mensagens são entregues enquanto em outros momentos temos os erros.</p>
-    <p>Esse padrão de falta de padrão se repete ainda no maior teste feito, aquele com um milhão de mensagens. 
-        Um dos testes perdeu metade das mensagens,enquanto outros foram feitos sem quase nenhum erro.</p>
 
-<h3>Python</h3>
-    <p>Para o menor caso de teste, podemos ver que a velocidade do Python afeta o processamento, 
-        perdendo constantemente cerca de 10% das mensagens.</p>
-    <p></p>
+<div class="row">
+    <div class="column">
+      <img src="dados/c_plot10000.png" alt="1000" style="width:90%">
+    </div>
+    <div class="column">
+        <img src="dados/c_plot100000.png" alt="1000" style="width:90%">
+    </div>
+    <div class="column">
+        <img src="dados/c_plot1000000.png" alt="1000" style="width:90%">
+    </div>
+</div> 
+<p>
+    Entretanto conforme o número de mensagens sobe, o número de erros cresce, mas não parece haver um padrão tão óbvio, 
+    pois algumas vezes todas mensagens são entregues enquanto em outros momentos temos erros em testes consecutivos. 
+    Parece haver algum misto de preempção do sistema operacional junto com o buffer do UDP, causando esse comportamento errático.
+</p>
+<p>
+    Esse padrão de falta de padrão se repete ainda no maior teste feito, aquele com um milhão de mensagens. 
+        Um dos testes perdeu metade das mensagens, enquanto outros foram feitos sem quase nenhum erro.
+    </p>
+<center>   <h3>Python</h3> </center>
+    <div class="row">
+        <div class="column">
+            <img src="dados/python_plot1000.png" alt="1000" style="width:90%">
+          </div>
+        <div class="column">
+          <img src="dados/python_plot10000.png" alt="1000" style="width:90%">
+        </div>
+        <div class="column">
+            <img src="dados/python_plot100000.png" alt="1000" style="width:90%">
+        </div>
+        <div class="column">
+            <img src="dados/python_plot1000000.png" alt="1000" style="width:90%">
+        </div>
+    </div> 
+    <p>
+
+    <p>
+        Para o menor caso de teste, podemos ver que a velocidade do Python afeta o processamento, 
+        perdendo constantemente cerca de 10% das mensagens.
+    </p>
+    <p>
+        Nos outros casos, como temos a sobrecarga de muitas mensagens numa única vez.
+        Esta sobrecargara parecer fazer com que o cliente tem dificuldades em mandar as mensagens,
+        de tal modo que o servidor tem tempo de tratar de seu buffer e receber corretamente as mensagens.
+    </p>
 
 <h3> Arquivos </h3>
 <h4> Principais </h4>
-<a href="codigo/server.c.txt">server.c</a>
-<a href="codigo/client.c.txt">client.c</a>
-<a href="codigo/server.py.txt">server.py</a>
-<a href="codigo/client.py.txt">client.py</a>
+<ul>
+    <li><a href="codigo/server.c.txt">server.c</a></li>
+    <li><a href="codigo/client.c.txt">client.c</a></li>
+    <li><a href="codigo/server.py.txt">server.py</a></li>
+    <li><a href="codigo/client.py.txt">client.py</a></li>
+</ul>
 
 <h4> De apoio </h4>
-<a href="codigo/relatorio.c.txt">relatorio.c</a>
-<a href="codigo/relatorio.h.txt">relatorio.h</a>
-<a href="codigo/consts.h.txt">consts.h</a>
-<a href="codigo/Makefile.txt">Makefile</a>
+<ul>
+    <li><a href="codigo/relatorio.c.txt">relatorio.c</a></li>
+    <li><a href="codigo/relatorio.h.txt">relatorio.h</a></li>
+    <li><a href="codigo/consts.h.txt">consts.h</a></li>
+    <li><a href="codigo/Makefile.txt">Makefile</a></li>
+</ul>
 </body>
 
-Para uma organização melhor dos programas e seus dados, acesse o github: 
-<a href="github.com/tikaradate/udp_cannon">Projeto</a>
+<h4> Exemplo de log</h4>
+<ul>
+    <li><a href="exemplos/exemplo.txt">exemplo100k.txt</a></li>
+    <li><a href="exemplos/exemplo.json">exemplo100k.json</a></li>
+</ul>
+
+<h4> Logs totais </h4>
+Cada um dos zips pesa por volta de 80 MB comprimidos e cerca de 1GB cada descomprimidos.
+<ul>
+    <li><a href="zips/c.zip">c.zip</a></li>
+    <li><a href="zips/python.zip">python.zip</a></li>
+</ul>
+
+<h2>O projeto está todo disponível no <a href="github.com/tikaradate/udp_cannon">github</a> também.</h2>
 
 </html>

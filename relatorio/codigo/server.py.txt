@@ -1,10 +1,10 @@
 # 
-#	Servidor UDP com análise de pacotes extraviados
+#	Servidor UDP com analise de pacotes extraviados
 #	Disciplina: CI1061-Redes II
 #	Autores:
 #		Jorge Lucas Vicilli Jabczenski
 #		Vinicius Tikara Venturi Date
-#	Última Atualização: 18/02/2023
+#	Ultima Atualizacao: 18/02/2023
 #
 import socket
 import sys
@@ -86,16 +86,16 @@ if __name__ == '__main__':
     try:
         host_name = socket.gethostname()
     except socket.gaierror:
-        print("Não foi possível obter nome da máquina")
+        print("Nao foi possivel obter nome da maquina")
         exit(1)
 
     try:    
         host = socket.gethostbyname(host_name)
     except socket.gaierror:
-        print("Não foi possível obter IP da máquina")
+        print("Nao foi possivel obter IP da maquina")
         exit(1)
 
-    # Cria os diretórios apropriados para os relatórios
+    # Cria os diretorios apropriados para os relatorios
     if not os.path.isdir('../dados'):
         os.mkdir('../dados', 0o700)
     if not os.path.isdir('../dados/python'):
@@ -138,6 +138,6 @@ if __name__ == '__main__':
 
             nr_relatorio += 1
             expected_seq = 0
-            # reinicia o valor das mensagens para as próximas execuções
+            # reinicia o valor das mensagens para as proximas execucoes
             for i in range (expected_seq):
                 num_seqs[i] = Type.NOTRECV

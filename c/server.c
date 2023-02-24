@@ -51,12 +51,13 @@ int main (int argc, char *argv[]){
 		puts("Uso correto: ./servidor <porta>");
 		exit(1);
 	}
-	
+	printf("Obtendo o endereco IP do host...\n");
 	gethostname(localhost, MAXHOSTNAME);
 	if ((hp = gethostbyname(localhost)) == NULL){
 		puts ("Nao consegui meu proprio IP");
 		exit (1);
-	}	
+	}
+	printf("Endereco IP obtido com sucesso!\n");
 	
 	nr_porta = atoi(argv[1]);
 	sa.sin_port = htons(nr_porta);
@@ -64,17 +65,21 @@ int main (int argc, char *argv[]){
 	bcopy((char *) hp->h_addr, (char *) &sa.sin_addr, hp->h_length);
 
 	sa.sin_family = hp->h_addrtype;		
-
+	printf("Abrindo socket na porta %d\n", nr_porta);
 	if ((soquete = socket(hp->h_addrtype, SOCK_DGRAM,0)) < 0){
         puts ("Nao consegui abrir o soquete");
 		exit (1);
-	}	
+	}
+	printf("Socket aberto com sucesso!\n");	
 
+	printf("Realizando o bind...\n");	
 	if (bind(soquete, (struct sockaddr *) &sa,sizeof(sa)) < 0){
 		puts ("Nao consegui fazer o bind");
 		exit (1);
 	}
+	printf("Bind realizado com sucesso!\n");
 
+	printf("Criando diretorios para armazenar os relatorios...\n");
 	// Criando diretório "dados" para armazenar os relatórios
 	struct stat st = {0};
 	if(stat("../dados", &st) == -1){
@@ -83,6 +88,7 @@ int main (int argc, char *argv[]){
 	if(stat("../dados/c", &st) == -1){
 		mkdir("../dados/c", S_IRWXU);
 	}
+	printf("Diretorios criados com sucesso!\n");
 
 	num_seqs = calloc(MAXMESSAGES, sizeof(int));
 	// no pollfds 0 temos as informações do servidor:
@@ -91,7 +97,6 @@ int main (int argc, char *argv[]){
 	pollfds[0].events = POLLIN;
 	pollfds[0].revents = 0;
 	expected_seq = 0;
-
 	while (TRUE) {
 		// esperando por mensagens com timeout predefinido
 		int poll_res = poll(pollfds, CLIENT, TIMEOUT);
@@ -119,17 +124,26 @@ int main (int argc, char *argv[]){
 			}
 		// ocorreu o timeout (poll_res <= 0)
 		} else {
+			printf(". "); // sinaliza o timeout
+			fflush(stdout);
 			relatorio_t infos = analisar_dados(expected_seq, num_seqs);
 			// se dados foram recebidos, criamos os relatórios
 			if (infos.qtd_recebidos != 0){
+				printf("Recebi até %d pacotes!\n", expected_seq);
+				printf("Gerando relatorios...\n");
 				char human_report_filename[64], machine_report_filename[64];
 				sprintf(human_report_filename,   "../dados/c/human_report_%d_%d.txt"   , nr_porta, nr_relatorio);
+				printf("Gerando relatorio humano...\n");
 				gerar_relatorio_humano(infos, human_report_filename);
+				printf("Relatorio humano gerado com sucesso!\n");
 				sprintf(machine_report_filename, "../dados/c/machine_report_%d_%d.json", nr_porta, nr_relatorio);
+				printf("Gerando relatorio em JSON...\n");
 				gerar_relatorio_json(infos, machine_report_filename);
+				printf("Relatorio em JSON gerado com sucesso!\n");
 				nr_relatorio++;
 				expected_seq = 0;
                 memset(num_seqs, 0, MAXMESSAGES*sizeof(int));
+				printf("Voltando a esperar mensagem...\n");
 			}
 		}
 	}
